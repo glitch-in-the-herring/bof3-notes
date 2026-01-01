@@ -1,0 +1,1 @@
+Random encounters happen when the step counter stored (`0x80143f22` in the RAM) exceeds the random encounter threshold (`0x80145fb8` in the RAM). See [[Walking]] for information about the step counter.

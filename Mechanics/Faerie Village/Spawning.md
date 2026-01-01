@@ -1,0 +1,1 @@
+Spawning is done when there at least one food in the village and there are less than 20 faeries. A new faerie is spawned for every 10 battles fought, rounded down. The game then picks a random faerie ID for each newly-spawned faerie. If the faerie is alive, then the game increments the ID until it finds a dead faerie. If the ID is too big, then it loops back to 0. 

@@ -1,0 +1,1 @@
+This repository contains technical information about the game Breath of Fire III. Feel free to submit a PR or an issue if you spot any errors, be it in the writing or in the information.

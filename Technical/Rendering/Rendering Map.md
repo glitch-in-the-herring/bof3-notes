@@ -1,0 +1,2 @@
+I guess that's what I'm calling this for now?
+This section determines what gets rendered on the screen, as you don't want to have the game render everything in the area. It starts at `0x8012c000` in the RAM.

@@ -1,0 +1,12 @@
+The general table for items is can be found at at 
+- `/BIN/ETC/GAME.EMI: 00033964` in the files
+- `0x801c8964` in the RAM
+starting with the Nothing item. Each entry is 18 bytes long and can be broken down as such:
+
+| Position | Description       | Value(s)                                                                                                                                                                                                                           | Note                                                                  |
+| -------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 0-11     | Name              | See the text guide                                                                                                                                                                                                                 |                                                                       |
+| 12       | Flags             | `0x01`: Usable in the field<br>`0x02`: Usable in battle <br>`0x04`: <br>`0x08`: Not sellable<br>`0x10`: Multi-target<br>`0x20`: Target enemy first<br>`0x40`: Allow targeting enemy party<br>`0x80`: Allow targeting party members |                                                                       |
+| 13       |                   |                                                                                                                                                                                                                                    |                                                                       |
+| 14-15    | Description index | 16-bit unsigned integer                                                                                                                                                                                                            |                                                                       |
+| 16-17    | Buying price      | 16-bit unsigned integer                                                                                                                                                                                                            | Selling price is automatically calculated as half of the buying price |
