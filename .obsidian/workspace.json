@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Player).md",
+                "file": "Equipment/Accessories/General Table.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combatant Data (Player)"
+              "title": "General Table"
             }
           },
           {
@@ -83,16 +83,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Formulae/Healing Formula.md",
+                "file": "Equipment/Armor/General Table.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Healing Formula"
+              "title": "General Table"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -227,13 +227,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Player).md",
+                "file": "Equipment/Armor/General Table.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Combatant Data (Player)"
+              "title": "Outline of General Table"
             }
           }
         ],
@@ -254,19 +254,21 @@
       "bases:Create new base": false
     }
   },
-  "active": "e8ab4cbbca5cf11b",
+  "active": "a599844c2acc79cb",
   "lastOpenFiles": [
+    "Mechanics/Battle/Formulae/Healing Formula.md",
+    "Mechanics/Battle/Formulae/Magic Formula.md",
+    "Mechanics/Fishing/Lure.md",
+    "Mechanics/Fishing/Equipment.md",
+    "Equipment/Accessories/General Table.md",
+    "Equipment/Armor/General Table.md",
+    "Mechanics/Battle/Combatant Data (Player).md",
     "LICENSE.txt",
     "LICENSE.md",
     "README.md",
-    "Mechanics/Battle/Formulae/Magic Formula.md",
     "Mechanics/Battle/Elements.md",
     "Mechanics/Battle/Formations.md",
     "Spells/Multipliers.md",
-    "Mechanics/Fishing/Equipment.md",
-    "Mechanics/Battle/Formulae/Healing Formula.md",
-    "Mechanics/Battle/Combatant Data (Player).md",
-    "Mechanics/Fishing/Lure.md",
     "Mechanics/Battle/Combatant Data (Enemy).md",
     "Mechanics/Battle/Resistance.md",
     "Mechanics/Battle/Regeneration.md",
@@ -281,7 +283,6 @@
     "Mechanics/Battle/Stat Multiplier.md",
     "Mechanics/Battle/Target.md",
     "Items/General Table.md",
-    "Mechanics/Fishing/Catching.md",
     "Mechanics/Fishing",
     "Mechanics/Battle/Dragons/Accession",
     "Mechanics/Battle/Dragons"

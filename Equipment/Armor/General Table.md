@@ -1,6 +1,6 @@
 The general table for armor (including helmets and shields) can be found at at 
 - `/BIN/ETC/GAME.EMI: 000348A4` in the files
-- `0x801c98a4 in the RAM
+- `0x801c98a4` in the RAM
 starting with the Nothing armor. Each entry is 22 bytes long and can be broken down as such:
 
 | Position | Description       | Value(s)               | Note                                                                  |
