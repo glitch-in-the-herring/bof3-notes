@@ -3,14 +3,14 @@ The general table for accessories can be found at at
 - `0x801c9e7c` in the RAM
 starting with the Nothing accessory. Each entry is 20 bytes long and can be broken down as such:
 
-| Position | Description       | Value(s)                             | Note                                                                  |
-| -------- | ----------------- | ------------------------------------ | --------------------------------------------------------------------- |
-| 0-11     | Name              | See the text guide                   |                                                                       |
-| 12       | Equipability      | See [[Equipment/Equipability.md]]    |                                                                       |
-| 13       | Flags             | See [[Items/General%20Table.md]]     |                                                                       |
-| 14       | Icon ID           | 8-bit unsigned integer               |                                                                       |
-| 15       | Weight            | 8-bit unsigned integer               |                                                                       |
-| 16-17    | Description index | 16-bit unsigned integer              |                                                                       |
-| 18-19    | Buying price      | 16-bit unsigned integer              | Selling price is automatically calculated as half of the buying price |
+| Position | Description       | Value(s)                                                      | Note                                                                  |
+| -------- | ----------------- | ------------------------------------------------------------- | --------------------------------------------------------------------- |
+| 0-11     | Name              | See the text guide                                            |                                                                       |
+| 12       | Equipability      | See [[Equipment/Equipability.md\|Equipability]]               |                                                                       |
+| 13       | Flags             | See [[Items/General%20Table.md\|the General Table for items]] |                                                                       |
+| 14       | Icon ID           | 8-bit unsigned integer                                        |                                                                       |
+| 15       | Weight            | 8-bit unsigned integer                                        |                                                                       |
+| 16-17    | Description index | 16-bit unsigned integer                                       |                                                                       |
+| 18-19    | Buying price      | 16-bit unsigned integer                                       | Selling price is automatically calculated as half of the buying price |
 
 
