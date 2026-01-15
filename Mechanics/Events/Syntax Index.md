@@ -1,7 +1,7 @@
 
 | Code   | Arguments                                      | Description                                            | Details |
 | ------ | ---------------------------------------------- | ------------------------------------------------------ | ------- |
-| `0x0d` | 0: ???<br>1: ???<br>2: ???<br>3: ???<br>4: ??? | Camera?A                                               |         |
+| `0x0d` | 0: ???<br>1: ???<br>2: ???<br>3: ???<br>4: ??? | Camera?                                                |         |
 | `0x0e` | 0: Pose index                                  | Change actor's pose                                    |         |
 | `0x19` | -                                              | Move north 0.5 steps                                   |         |
 | `0x1a` | -                                              | Move north 1 step                                      |         |
@@ -31,14 +31,16 @@
 | `0x4d` | -                                              | Move east 2.5 steps                                    |         |
 | `0x4e` | -                                              | Move east 3 steps                                      |         |
 | `0x4f` | -                                              | Move east 3.5 steps                                    |         |
-| `0x5f` | -                                              | Wait for player input                                  |         |
 | `0x91` | 0: x position<br>1: y position                 | Show an exclamation mark                               |         |
 | `0x92` | 0: x position<br>1: y position                 | Show a question mark                                   |         |
 | `0x93` | 0: x position<br>1: y position                 | Show a sweat drop                                      |         |
 | `0x94` | 0: x position<br>1: y position                 | Show a flashing quote sign                             |         |
 | `0x95` | 0: x position<br>1: y position                 | Show an impact effect                                  |         |
+| `0xa0` | 0: Signal ID                                   | Broadcast a signal                                     |         |
+| `0xa1` | 0: Signal ID                                   | Receive a signal                                       |         |
 | `0xb2` | 0: Sound index                                 | Play sound effect                                      |         |
+| `0xde` | 0: Function ID                                 | Execute a function                                     |         |
 | `0xe3` | 0: String index                                | Shows the text given by the string index as a text box |         |
-| `0xe8` | 0: Camera speed                                | Sets the camera's motion speed?                        |         |
+| `0xe8` | 0: Motion speed                                | Sets the actor's motion speed                          |         |
 | `0xfa` | 0: ???<br>1: ???<br>2: ???<br>3: ???           | Walk??? Camera???                                      |         |
 

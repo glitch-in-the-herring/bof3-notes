@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Events/Syntax Index.md",
+                "file": "Mechanics/Events/Signals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Syntax Index"
+              "title": "Signals"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mechanics/Events/Syntax Index.md",
+                "file": "Mechanics/Events/Signals.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Syntax Index"
+              "title": "Outline of Signals"
             }
           }
         ],
@@ -197,10 +197,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "a599844c2acc79cb",
+  "active": "e296be604525f089",
   "lastOpenFiles": [
-    "Mechanics/Events/Movement.md",
     "Mechanics/Events/Syntax Index.md",
+    "Mechanics/Events/Signals.md",
+    "Mechanics/Events/Movement.md",
+    "Mechanics/Events/Camera.md",
+    "Mechanics/Buildings/Stores.md",
+    "Mechanics/Buildings/Inns.md",
+    "Mechanics/Battle/Stat Multiplier.md",
+    "Mechanics/Battle/Regeneration.md",
+    "Mechanics/Battle/Battle Counter.md",
     "Mechanics/Battle/Combatant Data (Player).md",
     "Mechanics/Battle/Combatant Data (Enemy).md",
     "Mechanics/Battle/Combatant Counter.md",
@@ -210,7 +217,6 @@
     "Mechanics/Fishing/Equipment.md",
     "Spells/General Table.md",
     "Mechanics/Events/Text.md",
-    "Mechanics/Events/Camera.md",
     "Mechanics/Events",
     "README.md",
     "Items/General Table.md",
@@ -220,13 +226,7 @@
     "Items/Stat-Up Items.md",
     "Equipment/Accessories/General Table.md",
     "Equipment/Armor/General Table.md",
-    "Items/Key Items.md",
-    "Mechanics/Battle/Formulae/Healing Formula.md",
     "LICENSE.txt",
-    "LICENSE.md",
-    "Mechanics/Battle/Elements.md",
-    "Mechanics/Battle/Formations.md",
-    "Spells/Multipliers.md",
     "Mechanics/Fishing",
     "Mechanics/Battle/Dragons/Accession",
     "Mechanics/Battle/Dragons"
