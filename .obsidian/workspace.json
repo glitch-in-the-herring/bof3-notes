@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Events/Signals.md",
+                "file": "Mechanics/Events/Syntax Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Signals"
+              "title": "Syntax Index"
             }
           },
           {
@@ -170,13 +170,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mechanics/Events/Signals.md",
+                "file": "Mechanics/Events/Syntax Index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Signals"
+              "title": "Outline of Syntax Index"
             }
           }
         ],
@@ -199,16 +199,17 @@
   },
   "active": "e296be604525f089",
   "lastOpenFiles": [
-    "Mechanics/Events/Syntax Index.md",
     "Mechanics/Events/Signals.md",
+    "Mechanics/Events/Syntax Index.md",
     "Mechanics/Events/Movement.md",
+    "Mechanics/Events/Text.md",
+    "Mechanics/Battle/Combatant Data (Player).md",
     "Mechanics/Events/Camera.md",
     "Mechanics/Buildings/Stores.md",
     "Mechanics/Buildings/Inns.md",
     "Mechanics/Battle/Stat Multiplier.md",
     "Mechanics/Battle/Regeneration.md",
     "Mechanics/Battle/Battle Counter.md",
-    "Mechanics/Battle/Combatant Data (Player).md",
     "Mechanics/Battle/Combatant Data (Enemy).md",
     "Mechanics/Battle/Combatant Counter.md",
     "Spells/Targeting.md",
@@ -216,7 +217,6 @@
     "Mechanics/Fishing/Lure.md",
     "Mechanics/Fishing/Equipment.md",
     "Spells/General Table.md",
-    "Mechanics/Events/Text.md",
     "Mechanics/Events",
     "README.md",
     "Items/General Table.md",
