@@ -54,10 +54,12 @@
 | `0x95` | 0: x position<br>1: y position                 | Show an impact effect                                  |             |
 | `0xa0` | 0: Signal ID                                   | Broadcast a signal                                     | [[Signals]] |
 | `0xa1` | 0: Signal ID                                   | Receive a signal                                       | [[Signals]] |
+| `0xa2` | -                                              | Increment broadcast counter                            | [[Signals]] |
 | `0xb2` | 0: Sound index                                 | Play sound effect                                      |             |
 | `0xde` | 0: Function ID                                 | Execute a function                                     |             |
 | `0xe3` | 0: String index                                | Shows the text given by the string index as a text box |             |
 | `0xe8` | 0: Motion speed                                | Sets the actor's motion speed                          |             |
-| `0xea` | 0: Red<br>1: Green<br>2: Blue                  |                                                        |             |
+| `0xea` | 0: Red<br>1: Green<br>2: Blue                  | Modify the color channel values of the actor's texture |             |
+| `0xeb` | -                                              | Toggle visibility                                      |             |
 | `0xfa` | 0: ???<br>1: ???<br>2: ???<br>3: ???           | Walk??? Camera???                                      |             |
 
