@@ -6,6 +6,14 @@ The enemy party's combatant data starts at `0x801eb630` in the RAM and is 320 by
 | 116-119  | Name                  | ASCII null-terminated string |                                                                                                                  |
 | 148-149  | Current HP            | 16-bit signed integer        |                                                                                                                  |
 | 150-151  | Current AP            | 16-bit signed integer        |                                                                                                                  |
+| 152      | Steal item ID         | 8-bit unsigned integer       |                                                                                                                  |
+| 153      | Steal item type       | 8-bit unsigned integer       |                                                                                                                  |
+| 154      | Steal rate            | 8-bit unsigned integer       |                                                                                                                  |
+| 155      | Steal item charm flag | 8-bit unsigned integer       |                                                                                                                  |
+| 156      | Drop item ID          | 8-bit unsigned integer       |                                                                                                                  |
+| 157      | Drop item type        | 8-bit unsigned integer       |                                                                                                                  |
+| 158      | Drop rate             | 8-bit unsigned integer       |                                                                                                                  |
+| 159      | Drop item charm flag  | 8-bit unsigned integer       |                                                                                                                  |
 | 160-161  | Current max HP        | 16-bit signed integer        |                                                                                                                  |
 | 162-163  | Current max AP        | 16-bit signed integer        |                                                                                                                  |
 | 164-165  | Effective PWR         | 16-bit unsigned integer      |                                                                                                                  |
