@@ -76,7 +76,7 @@ Where:
 * $L_P[i]$ is the level of the $i$-th party member
 * $L_E[j]$ is the level of the $j$-th party member
 * $LSI$ is the level score index
-* $LS$ is the levelscore
+* $LS$ is the level score
 * $CMHP_P[i]$ is the current maximum HP of the $i$-th party member
 * $MHP_E[j]$ is the maximum HP of the $j$-th enemy
 * $HPP_P[i]$ is the HP points of the $i$-th party member

@@ -4,39 +4,53 @@
     "type": "split",
     "children": [
       {
-        "id": "485d13b30fda7387",
+        "id": "8161162b131a66a8",
         "type": "tabs",
         "children": [
           {
-            "id": "e296be604525f089",
+            "id": "54cee3a210b1c199",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Enemy).md",
+                "file": "Mechanics/Events/Syntax Index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combatant Data (Enemy)"
+              "title": "Syntax Index"
             }
           },
           {
-            "id": "404aaa21dda8c640",
+            "id": "3e03fcd424922c26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spells/Manipulation/Charm.md",
+                "file": "Spells/Healing Spells/Snooze.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Charm"
+              "title": "Snooze"
             }
           },
           {
-            "id": "c6c92c2902eaf825",
+            "id": "70e5eb023ef0713e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mechanics/Battle/Elements.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Elements"
+            }
+          },
+          {
+            "id": "a6e35fa2015bc7e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -48,37 +62,9 @@
               "icon": "lucide-file",
               "title": "Targeting"
             }
-          },
-          {
-            "id": "886785aa77b2ebd9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spells/Informative/Foretell.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Foretell"
-            }
-          },
-          {
-            "id": "1f7760e7f23eb723",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mechanics/Inventory.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Inventory"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "position",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -213,13 +199,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spells/Manipulation/Charm.md",
+                "file": "Mechanics/Battle/Combatant Data (Enemy).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Charm"
+              "title": "Outline of Combatant Data (Enemy)"
             }
           },
           {
@@ -251,36 +237,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "404aaa21dda8c640",
+  "active": "70e5eb023ef0713e",
   "lastOpenFiles": [
-    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Spells/Healing Spells/Transfer.md",
+    "Mechanics/Battle/Elements.md",
     "Spells/Targeting.md",
-    "Spells/Manipulation/Charm.md",
-    "Spells/Informative/Foretell.md",
-    "Mechanics/Battle/Combatant Data (Player).md",
-    "Spells/Manipulation",
-    "Mechanics/Inventory.md",
-    "Equipment/Armor/General Table.md",
-    "Technical/Controls/R1.md",
-    "Technical/Rendering/Interactables.md",
-    "Technical/Rendering/Camera.md",
-    "Technical/Rendering/Header.md",
-    "Mechanics/Events/Signals.md",
+    "Spells/Healing Spells/Snooze.md",
     "Mechanics/Events/Syntax Index.md",
+    "Spells/Healing Spells/Rest.md",
+    "Mechanics/Battle/Combatant Data (Player).md",
+    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Mechanics/Inventory.md",
+    "Spells/Informative/Foretell.md",
+    "Mechanics/Battle/Formulae/Melee Formula.md",
+    "Items/Item Call.md",
+    "Equipment/Weapons/General Table.md",
+    "Equipment/Armor/General Table.md",
+    "Items/General Table.md",
+    "Items/General%20Table.md",
+    "Spells/Spell Call.md",
+    "Mechanics/Permanent Stat Change Functions.md",
+    "Items/Offensive Items.md",
+    "Items/Stat-Up Items.md",
+    "Spells/Manipulation/Charm.md",
+    "Items/OffensivE i.md",
+    "Equipment/Equipability.md",
+    "Technical/File Table.md",
+    "Mechanics/Navigation/Walking.md",
+    "Spells/Manipulation",
+    "Technical/Controls/R1.md",
     "Technical/Controls",
-    "Mechanics/Battle/Formulae/Magic Formula.md",
-    "Mechanics/Battle/Formulae/Healing Formula.md",
-    "Mechanics/Events/Actor.md",
-    "Mechanics/Fishing/Fish.md",
-    "Mechanics/Field Party Data.md",
-    "Mechanics/Events/Movement.md",
-    "Mechanics/Battle/Formulae/Breath Formula.md",
-    "Spells/General Success Rate Formula.md",
-    "Mechanics/Events/Text.md",
-    "Mechanics/Events/Camera.md",
-    "Mechanics/Buildings/Stores.md",
-    "Mechanics/Buildings/Inns.md",
-    "Mechanics/Battle/Stat Multiplier.md",
     "Mechanics/Events",
     "LICENSE.txt",
     "Mechanics/Fishing",
