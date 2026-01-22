@@ -147,16 +147,12 @@ BIN/BOSS/BOSS055.EMI: 00050f0c
 801dac00 andi   $v0, $s3, 0x00ff
 801dac04 lui    $at, 0x801f
 801dac08 addu   $at, $a0
-Breakpoint condition met! Type:Always writing:0 condVal:0
-Breakpoint tPC=0x801dac0c - Cause: 801eb552::Write::2 (GUI) 
 801dac0c sh     $v0, -0x4aae(at)
 801dac10 sll    $v0, $s0, 0x02
 801dac14 addu   $v0, $s0
 801dac18 sll    $v1, $v0, 0x06
 801dac1c lui    $at, 0x801f
 801dac20 addu   $at, $a0
-Breakpoint condition met! Type:Always writing:0 condVal:0
-Breakpoint tPC=0x801dac24 - Cause: 801eb550::Write::2 (GUI) 
 801dac24 sh     $r0, -0x4ab0(at)
 801dac28 lui    $at, 0x8014
 801dac2c addu   $at, $v1

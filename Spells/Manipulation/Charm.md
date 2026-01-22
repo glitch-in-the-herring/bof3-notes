@@ -83,7 +83,7 @@ Charm increases the steal rate by 2 and the drop rate by 1. Once the rates have 
 ; if it is greater than or equal to 8
 800a0144 lui    $at, 0x801f
 800a0148 addu   $at, $v1
-800a014c sb     $v0, -0x4936(at) ; cap it to 8
+800a014c sb     $v0, -0x4936(at) ; cap it to 7
 
 ; if it is less than 8
 800a0150 lui    $at, 0x801f
@@ -97,7 +97,7 @@ Charm increases the steal rate by 2 and the drop rate by 1. Once the rates have 
 ; if it is greater than or equal to 8
 800a016c lui    $at, 0x801f
 800a0170 addu   $at, $v1
-800a0174 sb     $v0, -0x4932(at) ; cap it to 8
+800a0174 sb     $v0, -0x4932(at) ; cap it to 7
 ```
 The code can be found at:
 ```

@@ -8,49 +8,49 @@
         "type": "tabs",
         "children": [
           {
-            "id": "54cee3a210b1c199",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mechanics/Events/Syntax Index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Syntax Index"
-            }
-          },
-          {
-            "id": "3e03fcd424922c26",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spells/Healing Spells/Snooze.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Snooze"
-            }
-          },
-          {
-            "id": "70e5eb023ef0713e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Mechanics/Battle/Elements.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Elements"
-            }
-          },
-          {
             "id": "a6e35fa2015bc7e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spells/Uncategorized Attacks/Trump.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Trump"
+            }
+          },
+          {
+            "id": "b784ef22b9009500",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spells/Uncategorized Attacks/MagicShuffle.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MagicShuffle"
+            }
+          },
+          {
+            "id": "eea90b8ebd8263c1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mechanics/Battle/Target.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Target"
+            }
+          },
+          {
+            "id": "dceca4289e55c4ac",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -237,15 +237,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70e5eb023ef0713e",
+  "active": "b784ef22b9009500",
   "lastOpenFiles": [
-    "Spells/Healing Spells/Transfer.md",
-    "Mechanics/Battle/Elements.md",
-    "Spells/Targeting.md",
+    "Spells/Uncategorized Attacks/Trump.md",
+    "Mechanics/Battle/Target.md",
     "Spells/Healing Spells/Snooze.md",
     "Mechanics/Events/Syntax Index.md",
-    "Spells/Healing Spells/Rest.md",
+    "Spells/Uncategorized Attacks/MagicShuffle.md",
+    "Spells/Targeting.md",
+    "Mechanics/Battle/Action.md",
+    "Mechanics/Battle/Turns.md",
+    "Spells/General Table.md",
     "Mechanics/Battle/Combatant Data (Player).md",
+    "Spells/Manipulation/Charm.md",
+    "Spells/Healing Spells/Transfer.md",
+    "Mechanics/Battle/Elements.md",
+    "Spells/Healing Spells/Rest.md",
     "Mechanics/Battle/Combatant Data (Enemy).md",
     "Mechanics/Inventory.md",
     "Spells/Informative/Foretell.md",
@@ -258,14 +265,7 @@
     "Spells/Spell Call.md",
     "Mechanics/Permanent Stat Change Functions.md",
     "Items/Offensive Items.md",
-    "Items/Stat-Up Items.md",
-    "Spells/Manipulation/Charm.md",
-    "Items/OffensivE i.md",
-    "Equipment/Equipability.md",
-    "Technical/File Table.md",
-    "Mechanics/Navigation/Walking.md",
     "Spells/Manipulation",
-    "Technical/Controls/R1.md",
     "Technical/Controls",
     "Mechanics/Events",
     "LICENSE.txt",
