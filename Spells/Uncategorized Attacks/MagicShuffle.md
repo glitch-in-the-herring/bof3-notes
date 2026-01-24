@@ -4,7 +4,7 @@
 
 \* actual targeting depends on the randomly selected spell
 
-MagicShuffle rolls a $\mathrm{random}(0,31)$$ and chooses a random spell from one of the following:
+MagicShuffle rolls a $\mathrm{random}(0,31)$ and chooses a random spell from one of the following:
 
 | ID    | Spell      | Probability |
 | ----- | ---------- | ----------- |

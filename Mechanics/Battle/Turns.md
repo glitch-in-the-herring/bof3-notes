@@ -15,9 +15,10 @@ p = \left\lfloor \frac{Ma}{100} \right\rfloor
 $$
 $$
 a = \begin{cases}
-4 & \text{Unknown 1} < 2 \wedge \text{Unknown 1} \neq 1\\
-2 & \text{Unknown 1} = 1 ??\\
-0 & \text{Otherwise}??
+4 & \text{Heal spell with 0 learning difficulty}\\
+2 & \text{Assist spell with 0 learning difficulty}\\
+2 & \text{Skill with 0 learning difficulty}\\
+0 & \text{Otherwise}
 \end{cases}
 %\begin{cases}
 %0 & \mathrm{Examine}\\
@@ -36,6 +37,8 @@ M = \begin{cases}
 250 & 48 \leq L \leq 99
 \end{cases}
 $$
+Where:
+* $L$ is the combatant's level
 The code can be found in the following locations:
 ```
 BIN/BATTLE/BATTLE.EMI: 0004cf0c
@@ -171,7 +174,7 @@ BIN/BOSS/BOSS055.EMI: 00050f0c
 801dac58 sll    $v0, 0x02
 801dac5c lui    $at, 0x801d
 801dac60 addu   $at, $v0
-801dac64 lbu    $v1, -0x58e7(at) ; load current spell's flag
+801dac64 lbu    $v1, -0x58e7(at) ; load current spell's category and difficulty
 801dac68 nop    
 801dac6c beq    $v1, $s1, 0x801dacb4
 801dac70 slti   $v0, $v1, 0x0002
@@ -262,3 +265,5 @@ BIN/BOSS/BOSS055.EMI: 00050f0c
 801dad94 addu   $at, $a1
 801dad98 sh     $v0, -0x4ab0(at) ; final priority score
 ```
+## Extra Turns
+If a party member's AGL is greater than twice the average AGL of the enemy party, then the party member gets an extra turn.

@@ -7,7 +7,7 @@ starting with the empty spell (not to be confused with the [[Noting]] spells). E
 | -------- | --------------------------------- | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
 | 0-11     | Name                              | See the text guide                              |                                                                                    |
 | 12       | Targeting                         | See [[Targeting]]                               |                                                                                    |
-| 13       | Difficulty and spell category[^1] | High bit: Difficulty<br>Low bit: Spell category |                                                                                    |
+| 13       | Difficulty and spell category[^1] | High bit: Difficulty<br>Low bit: Spell category | See [[Learning]] and [[Spell Category]]                                            |
 | 14       | AP cost                           | 8-bit unsigned integer                          |                                                                                    |
 | 15       | Power                             | 8-bit unsigned integer                          | Unlike in Breath of Fire IV, the power is actually used for some buffs and debuffs |
 | 16       | Element                           | See [[Elements]]                                |                                                                                    |

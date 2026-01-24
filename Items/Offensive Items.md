@@ -1,1 +1,0 @@
-Offensive items are used to cast offensive spells during battle. They use the [[Magic Formula]]

@@ -45,3 +45,14 @@ This data gets copied to the [[Combatant Data (Player)|player combatant data]] w
 | 86       | Base critical         | 8-bit unsinged integer       |                                                                                                                              |
 | 87       | Base dodge            | 8-bit unsinged integer       |                                                                                                                              |
 | 88       | Base accuracy         | 8-bit unsinged integer       |                                                                                                                              |
+| 92-101   | Heal spells           | 8-bit unsigned integers      |                                                                                                                              |
+| 102-111  | Assist spells         | 8-bit unsigned integers      |                                                                                                                              |
+| 112-121  | Attack spells         | 8-bit unsigned integers      |                                                                                                                              |
+| 122-131  | Skills                | 8-bit unsigned integers      |                                                                                                                              |
+| 132      | Apprenticing level    | 8-bit unsigned integer       |                                                                                                                              |
+| 133      | HP growth             | 8-bit signed integer         |                                                                                                                              |
+| 134      | AP growth             | 8-bit signed integer         |                                                                                                                              |
+| 135      | PWR growth            | 8-bit signed integer         |                                                                                                                              |
+| 136      | DEF growth            | 8-bit signed integer         |                                                                                                                              |
+| 137      | AGL growth            | 8-bit signed integer         |                                                                                                                              |
+| 138      | INT growth            | 8-bit signed integer         |                                                                                                                              |
