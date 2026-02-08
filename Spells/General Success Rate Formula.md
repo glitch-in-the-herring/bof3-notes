@@ -1,4 +1,5 @@
 Spells that have a chance of failing use this formula to determine their success:
+
 $$
 \begin{cases}
 \mathrm{success} & \mathrm{random}(0,99) < r\\

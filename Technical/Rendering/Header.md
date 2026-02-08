@@ -1,6 +1,6 @@
 The header is located at:
 * `0x80104000` in the RAM
-The header of the 3D section consists of:6
+The header of the 3D section consists of:
 
 | Position | Description | Value(s)      | Note |
 | -------- | ----------- | ------------- | ---- |

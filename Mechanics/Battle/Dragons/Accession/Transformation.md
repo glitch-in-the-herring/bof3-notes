@@ -1,3 +1,5 @@
+## Back-Up
+Before Ryu transforms into a dragon, his stats are stored into a mirror of the [[Combatant Data (Player)|player combatant data]], located at `0x801ebf20` in the RAM. As it is a mirror, the structure of this section is identical to the structure of the player combatant data. 
 ## Predetermined Dragon Forms
 When checking for the dragon form to transform into, the game first looks up at the predetermined forms which are stored at:
 * `0x800b4d58` in the RAM
