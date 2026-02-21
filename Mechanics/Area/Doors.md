@@ -34,4 +34,4 @@ The game first checks if the tile that the leading character is stepping on is a
 801ba1c8 li     $v0, 0x00a1 ; store the code for door sills
 ```
 This code can be found at `BIN/ETC/GAME.EMI: 000251a4` in the game's files.
-The game then checks the door leaves in the area and finds the one that matches the door sill.
+The game then checks the door leaves in the area and finds the one that matches the door sill. The game does this by going through every leaves and finding the door that has a matching coordinate within the tolerance allowed by the size of the leaf.
