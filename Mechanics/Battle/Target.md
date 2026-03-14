@@ -23,7 +23,7 @@ Where:
 * $i$ is the index of the combatant selected. This is always from the player's party ($0\leq i\leq2$)
 * $w_k$ is the weights of the positions of the current formation
 In all formations, $d$ is 16.
-The weights for each formation can be found at:
+There are two sets of weights for the normal, attack, and defense. The first is for a full party of three characters. The second is for a party of two characters ("partial-party"). The full-party weights for each formation can be found at:
 * `0x801eb39c` in the RAM
 * In the following places in the game's files:
 ```
@@ -70,27 +70,94 @@ BIN/BOSS/BOSS052.EMI: 0005bf9c
 BIN/BOSS/BOSS054.EMI: 0005e79c
 BIN/BOSS/BOSS055.EMI: 0006179c
 ```
-Each weight is a byte. Each formation has three weights.
+The partial-party weights for each formation can be found at:
+* `0x801eb394` in the RAM
+```
+BIN/BATTLE/BATTLE.EMI: 0005d794
+BIN/BATTLE/BATTLE2.EMI: 0005d794
+BIN/BOSS/BOSS001.EMI: 0001af94
+BIN/BOSS/BOSS002.EMI: 0005e794
+BIN/BOSS/BOSS004.EMI: 0001af94
+BIN/BOSS/BOSS007.EMI: 0005d794
+BIN/BOSS/BOSS008.EMI: 0005b794
+BIN/BOSS/BOSS012.EMI: 0005e794
+BIN/BOSS/BOSS013.EMI: 0005e794
+BIN/BOSS/BOSS014.EMI: 0005d794
+BIN/BOSS/BOSS015.EMI: 0005d794
+BIN/BOSS/BOSS017.EMI: 0005e794
+BIN/BOSS/BOSS018.EMI: 0005e794
+BIN/BOSS/BOSS019.EMI: 0005e794
+BIN/BOSS/BOSS020.EMI: 0005e794
+BIN/BOSS/BOSS021.EMI: 0005e794
+BIN/BOSS/BOSS022.EMI: 0001af94
+BIN/BOSS/BOSS023.EMI: 0005b794
+BIN/BOSS/BOSS024.EMI: 0005e794
+BIN/BOSS/BOSS025.EMI: 0001af94
+BIN/BOSS/BOSS027.EMI: 0005e794
+BIN/BOSS/BOSS028.EMI: 0005e794
+BIN/BOSS/BOSS029.EMI: 0005e794
+BIN/BOSS/BOSS030.EMI: 0005e794
+BIN/BOSS/BOSS031.EMI: 0001af94
+BIN/BOSS/BOSS032.EMI: 0005e794
+BIN/BOSS/BOSS033.EMI: 0005d794
+BIN/BOSS/BOSS034.EMI: 0005e794
+BIN/BOSS/BOSS035.EMI: 0005e794
+BIN/BOSS/BOSS036.EMI: 0005e794
+BIN/BOSS/BOSS037.EMI: 0005e794
+BIN/BOSS/BOSS038.EMI: 0005e794
+BIN/BOSS/BOSS040.EMI: 0005e794
+BIN/BOSS/BOSS042.EMI: 0005e794
+BIN/BOSS/BOSS046.EMI: 0005e794
+BIN/BOSS/BOSS047.EMI: 0005e794
+BIN/BOSS/BOSS049.EMI: 0005e794
+BIN/BOSS/BOSS050.EMI: 0005e794
+BIN/BOSS/BOSS051.EMI: 0005e794
+BIN/BOSS/BOSS052.EMI: 0005bf94
+BIN/BOSS/BOSS054.EMI: 0005e794
+BIN/BOSS/BOSS055.EMI: 00061794
+```
+Each weight is a byte.
 ## Normal
+### Full party
 
 | Position | Weight | Probability |
 | -------- | ------ | ----------- |
 | 0        | 6      | 37.5%       |
 | 1        | 6      | 37.5%       |
 | 2        | 4      | 25%         |
+### Partial party
+| Position | Weight | Probability |
+| -------- | ------ | ----------- |
+| 0        | 9      | 56.25%      |
+| 1        | 7      | 43.75%      |
 ## Attack
+### Full party
+
 | Position | Weight | Probability |
 | -------- | ------ | ----------- |
 | 0        | 10     | 62.5%       |
 | 1        | 3      | 18.75%      |
 | 2        | 3      | 18.75%      |
+### Partial party
+| Position | Weight | Probability |
+| -------- | ------ | ----------- |
+| 0        | 12     | 75%         |
+| 1        | 4      | 25%         |
 ## Defense
+### Full party
+
 | Position | Weight | Probability |
 | -------- | ------ | ----------- |
 | 0        | 6      | 37.5%       |
 | 1        | 5      | 31.25%      |
 | 2        | 5      | 31.25%      |
+### Partial party
+| Position | Weight | Probability |
+| -------- | ------ | ----------- |
+| 0        | 8      | 50%         |
+| 1        | 8      | 50%         |
 ## Chain
+
 | Position | Weight | Probability |
 | -------- | ------ | ----------- |
 | 0        | 8      | 50%         |
@@ -119,7 +186,7 @@ Each weight is a byte. Each formation has three weights.
 801e2e50 sw     $ra, 0x0024(sp)
 801e2e54 sw     $s4, 0x0020(sp)
 801e2e58 sw     $s1, 0x0014(sp)
-801e2e5c beq    $v1, $v0, 0x801e2e84
+801e2e5c beq    $v1, $v0, 0x801e2e84 
 801e2e60 sw     $s0, 0x0010(sp)
 801e2e64 slti   $v0, $v1, 0x0003
 801e2e68 bnez   $v0, 0x801e3094
@@ -127,6 +194,8 @@ Each weight is a byte. Each formation has three weights.
 801e2e70 li     $v0, 0x0003
 801e2e74 beq    $v1, $v0, 0x801e2f8c
 801e2e78 move   $v0, $r0
+
+; if there are three party members
 801e2f8c move   $s0, $r0
 801e2f90 lui    $s4, 0x801f
 801e2f94 addiu  $s4, -0x4c64
