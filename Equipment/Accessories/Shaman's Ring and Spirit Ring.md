@@ -5,7 +5,7 @@
 | ID     |
 | ------ |
 | `0x1a` |
-The Shaman'sRing and the Spirit Ring reduces the AP cost of any spell their wearers cast by 25% and 50% respectively. The code that does this change can be found at `SLUS_004.22: 000d0a68` in the game's files:
+The Shaman'sRing and the Spirit Ring reduces the AP cost of any spell their wearers cast by 25% and 50% respectively. The code that does this change can be found at `SLUS_004.22: 000d0a68` in the game's files. This code affects both the AP use and the displayed AP cost.
 
 ```
 80166a68 lbu    $a1, 0x0012(a0) ; load caster's first accessory
@@ -26,7 +26,7 @@ The Shaman'sRing and the Spirit Ring reduces the AP cost of any spell their wear
 ; if the caster is wearing a Spirit Ring
 80166a94 addiu  $v0, 0x0001 ; add 1 to the AP cost
 80166a98 j      0x80166adc
-80166a9c srl    $v1, $v0, 0x01 ; divde AP cost + 1 by 2. The + 1 to the AP cost effectively make sthis AP cost / 2, rounded up.
+80166a9c srl    $v1, $v0, 0x01 ; divde AP cost + 1 by 2. The + 1 to the AP cost effectively makes this AP cost / 2, rounded up.
 80166adc jr     $ra
 80166ae0 andi   $v0, $v1, 0x00ff
 

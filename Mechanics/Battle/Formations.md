@@ -25,20 +25,134 @@ The base formation.
 | DEF -25%       | -   | -   |
 | Reprisal +100% | -   | -   |
 
-Increases the first party member's PWR by 50% while decreasing their DEF by 25%
+Increases the first party member's PWR by 50% while decreasing their DEF by 25%.
+```
+800aaadc lhu    $a1, 0x0000(s0) ; load 1st party member's PWR
+800aaae0 move   $a0, $s0
+800aaae4 jal    0x801654f4
+800aaae8 srl    $a1, 0x01 ; divide PWR by 2
+...
+800aaaec lhu    $a1, 0x0002(s0) ; load 1st party member's DEF 
+800aaaf0 addiu  $a0, $s0, 0x0002
+800aaaf4 srl    $a1, 0x02 ; divide DEF by 4
+800aaaf8 jal    0x801654f4
+800aaafc subu   $a1, $r0, $a1
+...
+800aab00 lbu    $a1, 0x0015(s0) ; load 1st party member's reprisal 
+800aab04 jal    0x80165694
+800aab08 addiu  $a0, $s0, 0x0015
+```
+The code can be found at:
+```
+BIN/BATTLE/BATTLE.EMI: 0009e2dc
+BIN/BATTLE/BATTLE2.EMI: 0009e2dc
+BIN/BOSS/BOSS001.EMI: 0005badc
+BIN/BOSS/BOSS002.EMI: 0009f2dc
+BIN/BOSS/BOSS004.EMI: 0005badc
+BIN/BOSS/BOSS007.EMI: 0009e2dc
+BIN/BOSS/BOSS008.EMI: 0009c2dc
+BIN/BOSS/BOSS012.EMI: 0009f2dc
+BIN/BOSS/BOSS013.EMI: 0009f2dc
+BIN/BOSS/BOSS014.EMI: 0009e2dc
+BIN/BOSS/BOSS015.EMI: 0009e2dc
+BIN/BOSS/BOSS017.EMI: 0009f2dc
+BIN/BOSS/BOSS018.EMI: 0009f2dc
+BIN/BOSS/BOSS019.EMI: 0009f2dc
+BIN/BOSS/BOSS020.EMI: 0009f2dc
+BIN/BOSS/BOSS021.EMI: 0009f2dc
+BIN/BOSS/BOSS022.EMI: 0005badc
+BIN/BOSS/BOSS023.EMI: 0009c2dc
+BIN/BOSS/BOSS024.EMI: 0009f2dc
+BIN/BOSS/BOSS025.EMI: 0005badc
+BIN/BOSS/BOSS027.EMI: 0009f2dc
+BIN/BOSS/BOSS028.EMI: 0009f2dc
+BIN/BOSS/BOSS029.EMI: 0009f2dc
+BIN/BOSS/BOSS030.EMI: 0009f2dc
+BIN/BOSS/BOSS031.EMI: 0005badc
+BIN/BOSS/BOSS032.EMI: 0009f2dc
+BIN/BOSS/BOSS033.EMI: 0009e2dc
+BIN/BOSS/BOSS034.EMI: 0009f2dc
+BIN/BOSS/BOSS035.EMI: 0009f2dc
+BIN/BOSS/BOSS036.EMI: 0009f2dc
+BIN/BOSS/BOSS037.EMI: 0009f2dc
+BIN/BOSS/BOSS038.EMI: 0009f2dc
+BIN/BOSS/BOSS040.EMI: 0009f2dc
+BIN/BOSS/BOSS042.EMI: 0009f2dc
+BIN/BOSS/BOSS046.EMI: 0009f2dc
+BIN/BOSS/BOSS047.EMI: 0009f2dc
+BIN/BOSS/BOSS049.EMI: 0009f2dc
+BIN/BOSS/BOSS050.EMI: 0009f2dc
+BIN/BOSS/BOSS051.EMI: 0009f2dc
+BIN/BOSS/BOSS052.EMI: 0009cadc
+BIN/BOSS/BOSS054.EMI: 0009f2dc
+BIN/BOSS/BOSS055.EMI: 000a22dc
+```
 ## Defense
-| 1st | 2nd | 3rd |
-| --- | --- | --- |
-| -   | -   | -   |
+| 1st      | 2nd      | 3rd      |
+| -------- | -------- | -------- |
+| SPD -25% | SPD -25% | SPD -25% |
+Decreases speed by 25%:
+```
+800aab5c lhu    $a1, 0x5f48(at) ; load current DEF
+800aab60 addiu  $a0, 0x0044
+800aab64 srl    $a1, 0x02 ; divide DEF by 4
+800aab68 jal    0x801654f4
+800aab6c subu   $a1, $r0, $a1 ; make the change negative
+```
+This code can be found at:
+```
+BIN/BATTLE/BATTLE.EMI: 0009e35c
+BIN/BATTLE/BATTLE2.EMI: 0009e35c
+BIN/BOSS/BOSS001.EMI: 0005bb5c
+BIN/BOSS/BOSS002.EMI: 0009f35c
+BIN/BOSS/BOSS004.EMI: 0005bb5c
+BIN/BOSS/BOSS007.EMI: 0009e35c
+BIN/BOSS/BOSS008.EMI: 0009c35c
+BIN/BOSS/BOSS012.EMI: 0009f35c
+BIN/BOSS/BOSS013.EMI: 0009f35c
+BIN/BOSS/BOSS014.EMI: 0009e35c
+BIN/BOSS/BOSS015.EMI: 0009e35c
+BIN/BOSS/BOSS017.EMI: 0009f35c
+BIN/BOSS/BOSS018.EMI: 0009f35c
+BIN/BOSS/BOSS019.EMI: 0009f35c
+BIN/BOSS/BOSS020.EMI: 0009f35c
+BIN/BOSS/BOSS021.EMI: 0009f35c
+BIN/BOSS/BOSS022.EMI: 0005bb5c
+BIN/BOSS/BOSS023.EMI: 0009c35c
+BIN/BOSS/BOSS024.EMI: 0009f35c
+BIN/BOSS/BOSS025.EMI: 0005bb5c
+BIN/BOSS/BOSS027.EMI: 0009f35c
+BIN/BOSS/BOSS028.EMI: 0009f35c
+BIN/BOSS/BOSS029.EMI: 0009f35c
+BIN/BOSS/BOSS030.EMI: 0009f35c
+BIN/BOSS/BOSS031.EMI: 0005bb5c
+BIN/BOSS/BOSS032.EMI: 0009f35c
+BIN/BOSS/BOSS033.EMI: 0009e35c
+BIN/BOSS/BOSS034.EMI: 0009f35c
+BIN/BOSS/BOSS035.EMI: 0009f35c
+BIN/BOSS/BOSS036.EMI: 0009f35c
+BIN/BOSS/BOSS037.EMI: 0009f35c
+BIN/BOSS/BOSS038.EMI: 0009f35c
+BIN/BOSS/BOSS040.EMI: 0009f35c
+BIN/BOSS/BOSS042.EMI: 0009f35c
+BIN/BOSS/BOSS046.EMI: 0009f35c
+BIN/BOSS/BOSS047.EMI: 0009f35c
+BIN/BOSS/BOSS049.EMI: 0009f35c
+BIN/BOSS/BOSS050.EMI: 0009f35c
+BIN/BOSS/BOSS051.EMI: 0009f35c
+BIN/BOSS/BOSS052.EMI: 0009cb5c
+BIN/BOSS/BOSS054.EMI: 0009f35c
+BIN/BOSS/BOSS055.EMI: 000a235c
+```
 Surprisingly, this formation does *not* change the defense stat of the party members. Instead, what it does is it takes the calculated physical damage of an attack and subtracts 25% of it. The code that checks this is:
 ```
 801dc604 li     $v0, 0x0002 ; defense formation = 2
 801dc608 lui    $v1, 0x8014
 801dc60c lbu    $v1, 0x4f58(v1) ; load the current formation
 801dc610 nop    
-801dc614 bne    $v1, $v0, 0x801dc62c ; if the current formation is defense
+801dc614 bne    $v1, $v0, 0x801dc62c 
 801dc618 andi   $v0, $s2, 0x0080
-
+; if the current formation is defense
 801dc61c sll    $v0, $s1, 0x10
 801dc620 sra    $v0, 0x12 ; calculate dmg / 4
 801dc624 subu   $s1, $v0 ; calculate dmg - dmg / 4
@@ -95,10 +209,236 @@ BIN/BOSS/BOSS055.EMI: 00052a0c
 | SPD unchanged | SPD = 1st | SPD = 1st |
 | DEF -50%      | DEF -50%  | DEF -50%  |
 Chain sets the speed of everyone in the party equal to the first member while cutting everyone's defense in half.
+```
+800aabe4 lhu    $a1, 0x5f46(at) ; load current DEF
+800aabe8 lhu    $v1, 0x0000(s2) ; load first party member's SPD
+800aabec srl    $a1, 0x01 ; divide DEF by 2
+800aabf0 lui    $at, 0x8014
+800aabf4 addu   $at, $v0
+800aabf8 sh     $v1, 0x5f48(at) ; store the first party member's SPD as own speed
+800aabfc jal    0x801654f4
+800aac00 subu   $a1, $r0, $a1 ; make the DEF chnage negative
+```
+This code can be found at:
+```
+BIN/BATTLE/BATTLE.EMI: 0009e3e4
+BIN/BATTLE/BATTLE2.EMI: 0009e3e4
+BIN/BOSS/BOSS001.EMI: 0005bbe4
+BIN/BOSS/BOSS002.EMI: 0009f3e4
+BIN/BOSS/BOSS004.EMI: 0005bbe4
+BIN/BOSS/BOSS007.EMI: 0009e3e4
+BIN/BOSS/BOSS008.EMI: 0009c3e4
+BIN/BOSS/BOSS012.EMI: 0009f3e4
+BIN/BOSS/BOSS013.EMI: 0009f3e4
+BIN/BOSS/BOSS014.EMI: 0009e3e4
+BIN/BOSS/BOSS015.EMI: 0009e3e4
+BIN/BOSS/BOSS017.EMI: 0009f3e4
+BIN/BOSS/BOSS018.EMI: 0009f3e4
+BIN/BOSS/BOSS019.EMI: 0009f3e4
+BIN/BOSS/BOSS020.EMI: 0009f3e4
+BIN/BOSS/BOSS021.EMI: 0009f3e4
+BIN/BOSS/BOSS022.EMI: 0005bbe4
+BIN/BOSS/BOSS023.EMI: 0009c3e4
+BIN/BOSS/BOSS024.EMI: 0009f3e4
+BIN/BOSS/BOSS025.EMI: 0005bbe4
+BIN/BOSS/BOSS027.EMI: 0009f3e4
+BIN/BOSS/BOSS028.EMI: 0009f3e4
+BIN/BOSS/BOSS029.EMI: 0009f3e4
+BIN/BOSS/BOSS030.EMI: 0009f3e4
+BIN/BOSS/BOSS031.EMI: 0005bbe4
+BIN/BOSS/BOSS032.EMI: 0009f3e4
+BIN/BOSS/BOSS033.EMI: 0009e3e4
+BIN/BOSS/BOSS034.EMI: 0009f3e4
+BIN/BOSS/BOSS035.EMI: 0009f3e4
+BIN/BOSS/BOSS036.EMI: 0009f3e4
+BIN/BOSS/BOSS037.EMI: 0009f3e4
+BIN/BOSS/BOSS038.EMI: 0009f3e4
+BIN/BOSS/BOSS040.EMI: 0009f3e4
+BIN/BOSS/BOSS042.EMI: 0009f3e4
+BIN/BOSS/BOSS046.EMI: 0009f3e4
+BIN/BOSS/BOSS047.EMI: 0009f3e4
+BIN/BOSS/BOSS049.EMI: 0009f3e4
+BIN/BOSS/BOSS050.EMI: 0009f3e4
+BIN/BOSS/BOSS051.EMI: 0009f3e4
+BIN/BOSS/BOSS052.EMI: 0009cbe4
+BIN/BOSS/BOSS054.EMI: 0009f3e4
+BIN/BOSS/BOSS055.EMI: 000a23e4
+```
 ## Magic
 | 1st      | 2nd      | 3rd      |
 | -------- | -------- | -------- |
 | INT -25% | INT -25% | INT +50% |
 Magic increases the third party member's intelligence while lowering the others.
+```
+800aac30 lhu    $a1, 0x0000(s0) ; load 3rd party member's INT
+800aac34 move   $a0, $s0
+800aac38 jal    0x801654f4
+800aac3c srl    $a1, 0x01 ; divide INT by 2
+800aac40 lhu    $a1, -0x0280(s0) ; load 1st party members INT
+800aac44 addiu  $a0, $s0, -0x0280 
+800aac48 srl    $a1, 0x02 ; divide INT by 4
+800aac4c jal    0x801654f4 
+800aac50 subu   $a1, $r0, $a1 ; make the change negative
+800aac54 lhu    $a1, -0x0140(s0) ; load 2nd party member's INT
+800aac58 addiu  $a0, $s0, -0x0140
+800aac5c srl    $a1, 0x02 ; divide INT by 4
+800aac60 jal    0x801654f4
+800aac64 subu   $a1, $r0, $a1 ; make the change negative
+```
+The code can be found at:
+```
+BIN/BATTLE/BATTLE.EMI: 0009e430
+BIN/BATTLE/BATTLE2.EMI: 0009e430
+BIN/BOSS/BOSS001.EMI: 0005bc30
+BIN/BOSS/BOSS002.EMI: 0009f430
+BIN/BOSS/BOSS004.EMI: 0005bc30
+BIN/BOSS/BOSS007.EMI: 0009e430
+BIN/BOSS/BOSS008.EMI: 0009c430
+BIN/BOSS/BOSS012.EMI: 0009f430
+BIN/BOSS/BOSS013.EMI: 0009f430
+BIN/BOSS/BOSS014.EMI: 0009e430
+BIN/BOSS/BOSS015.EMI: 0009e430
+BIN/BOSS/BOSS017.EMI: 0009f430
+BIN/BOSS/BOSS018.EMI: 0009f430
+BIN/BOSS/BOSS019.EMI: 0009f430
+BIN/BOSS/BOSS020.EMI: 0009f430
+BIN/BOSS/BOSS021.EMI: 0009f430
+BIN/BOSS/BOSS022.EMI: 0005bc30
+BIN/BOSS/BOSS023.EMI: 0009c430
+BIN/BOSS/BOSS024.EMI: 0009f430
+BIN/BOSS/BOSS025.EMI: 0005bc30
+BIN/BOSS/BOSS027.EMI: 0009f430
+BIN/BOSS/BOSS028.EMI: 0009f430
+BIN/BOSS/BOSS029.EMI: 0009f430
+BIN/BOSS/BOSS030.EMI: 0009f430
+BIN/BOSS/BOSS031.EMI: 0005bc30
+BIN/BOSS/BOSS032.EMI: 0009f430
+BIN/BOSS/BOSS033.EMI: 0009e430
+BIN/BOSS/BOSS034.EMI: 0009f430
+BIN/BOSS/BOSS035.EMI: 0009f430
+BIN/BOSS/BOSS036.EMI: 0009f430
+BIN/BOSS/BOSS037.EMI: 0009f430
+BIN/BOSS/BOSS038.EMI: 0009f430
+BIN/BOSS/BOSS040.EMI: 0009f430
+BIN/BOSS/BOSS042.EMI: 0009f430
+BIN/BOSS/BOSS046.EMI: 0009f430
+BIN/BOSS/BOSS047.EMI: 0009f430
+BIN/BOSS/BOSS049.EMI: 0009f430
+BIN/BOSS/BOSS050.EMI: 0009f430
+BIN/BOSS/BOSS051.EMI: 0009f430
+BIN/BOSS/BOSS052.EMI: 0009cc30
+BIN/BOSS/BOSS054.EMI: 0009f430
+BIN/BOSS/BOSS055.EMI: 000a2430
+```
 ## Refuge
 Heals 1 HP every turn.
+```
+801d5e38 lbu    $v1, 0x4f58(v1) ; load current formation
+801d5e3c li     $v0, 0x0005 ; refuge's ID is 5
+801d5e40 bne    $v1, $v0, 0x801d5e68 ; check if it's refuge
+801d5e44 nop    
+; if the formation is refuge
+801d5e48 lui    $at, 0x8014
+801d5e4c addu   $at, $a1
+801d5e50 lhu    $v0, 0x5fac(at) ; load current HP change
+801d5e54 nop    
+801d5e58 addiu  $v0, -0x0001 ; add -1 to the HP change
+801d5e5c lui    $at, 0x8014
+801d5e60 addu   $at, $a1
+801d5e64 sh     $v0, 0x5fac(at) ; store new HP chan ge
+```
+This code can be found at:
+```
+BIN/BATTLE/BATTLE.EMI: 00048238
+BIN/BATTLE/BATTLE2.EMI: 00048238
+BIN/BOSS/BOSS001.EMI: 00005a38
+BIN/BOSS/BOSS002.EMI: 00049238
+BIN/BOSS/BOSS004.EMI: 00005a38
+BIN/BOSS/BOSS007.EMI: 00048238
+BIN/BOSS/BOSS008.EMI: 00046238
+BIN/BOSS/BOSS012.EMI: 00049238
+BIN/BOSS/BOSS013.EMI: 00049238
+BIN/BOSS/BOSS014.EMI: 00048238
+BIN/BOSS/BOSS015.EMI: 00048238
+BIN/BOSS/BOSS017.EMI: 00049238
+BIN/BOSS/BOSS018.EMI: 00049238
+BIN/BOSS/BOSS019.EMI: 00049238
+BIN/BOSS/BOSS020.EMI: 00049238
+BIN/BOSS/BOSS021.EMI: 00049238
+BIN/BOSS/BOSS022.EMI: 00005a38
+BIN/BOSS/BOSS023.EMI: 00046238
+BIN/BOSS/BOSS024.EMI: 00049238
+BIN/BOSS/BOSS025.EMI: 00005a38
+BIN/BOSS/BOSS027.EMI: 00049238
+BIN/BOSS/BOSS028.EMI: 00049238
+BIN/BOSS/BOSS029.EMI: 00049238
+BIN/BOSS/BOSS030.EMI: 00049238
+BIN/BOSS/BOSS031.EMI: 00005a38
+BIN/BOSS/BOSS032.EMI: 00049238
+BIN/BOSS/BOSS033.EMI: 00048238
+BIN/BOSS/BOSS034.EMI: 00049238
+BIN/BOSS/BOSS035.EMI: 00049238
+BIN/BOSS/BOSS036.EMI: 00049238
+BIN/BOSS/BOSS037.EMI: 00049238
+BIN/BOSS/BOSS038.EMI: 00049238
+BIN/BOSS/BOSS040.EMI: 00049238
+BIN/BOSS/BOSS042.EMI: 00049238
+BIN/BOSS/BOSS046.EMI: 00049238
+BIN/BOSS/BOSS047.EMI: 00049238
+BIN/BOSS/BOSS049.EMI: 00049238
+BIN/BOSS/BOSS050.EMI: 00049238
+BIN/BOSS/BOSS051.EMI: 00049238
+BIN/BOSS/BOSS052.EMI: 00046a38
+BIN/BOSS/BOSS054.EMI: 00049238
+BIN/BOSS/BOSS055.EMI: 0004c238
+```
+## Stat Change Code 
+The code that changes the stats consists of two parts: the context and the stat changer. The stat changer is the same for all of these:
+
+```
+801654f4 lhu    $v1, 0x0000(a0) ; load the stat
+801654f8 sll    $v0, $a1, 0x10
+801654fc sra    $v0, 0x10
+80165500 blez   $v0, 0x80165534
+80165504 li     $a2, 0x03e7
+
+; if the stat change is negative
+80165534 bgez   $v0, 0x80165564
+80165538 nop    
+8016553c beqz   $v1, 0x80165564 
+
+; if the current stat is not zero
+80165540 addu   $v0, $v1, $a1 ; add the stat change to the stat
+80165544 sh     $v0, 0x0000(a0) ; store the new atat
+80165548 sll    $v0, 0x10
+8016554c bgez   $v0, 0x80165564
+80165550 subu   $v0, $r0, $v1
+80165564 move   $v0, $r0
+80165568 jr     $ra
+8016556c nop    
+```
+This code can be found at `SLUS_004.22: 000cf4f4`.
+Stats that cap at 100 use this formula instead:
+```
+80165694 lbu    $a2, 0x0000(a0) ; load the stat
+80165698 li     $v0, 0x0064
+8016569c andi   $v1, $a2, 0x00ff
+801656a0 bne    $v1, $v0, 0x801656b0
+801656a4 addu   $v0, $a2, $a1 ; add the stat and the stat change
+
+; if the stat is not 100
+801656b0 sb     $v0, 0x0000(a0) ; store the new stat
+801656b4 sll    $v0, 0x18
+801656b8 bgez   $v0, 0x801656c4
+801656bc nop    
+801656c4 lbu    $v0, 0x0000(a0) ; load the changed stat
+801656c8 nop    
+801656cc sltiu  $v0, 0x0065
+801656d0 bnez   $v0, 0x801656e4
+801656d4 li     $v0, 0x0001
+
+; if tje changed stat is less than or equal to 100
+801656e4 jr     $ra
+801656e8 nop    
+```
+This code can be found at `SLUS_004.22: 000cf694`.
