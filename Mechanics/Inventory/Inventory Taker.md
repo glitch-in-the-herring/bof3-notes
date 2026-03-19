@@ -1,0 +1,1 @@
+The inventory taker is a function that subtracts a given amount from the quantity of a specified item given by its ID. It returns 1 if the item quantity was successfully reduced and 0 if the item was not found or if there are not enough items

@@ -40,7 +40,7 @@ Increases the first party member's PWR by 50% while decreasing their DEF by 25%.
 ...
 800aab00 lbu    $a1, 0x0015(s0) ; load 1st party member's reprisal 
 800aab04 jal    0x80165694
-800aab08 addiu  $a0, $s0, 0x0015
+800aab08 addiu  $a0, $s0, 0x0015 
 ```
 The code can be found at:
 ```

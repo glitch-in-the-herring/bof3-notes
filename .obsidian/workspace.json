@@ -4,81 +4,80 @@
     "type": "split",
     "children": [
       {
-        "id": "32174593f5f1c849",
+        "id": "20e886ff4648f05a",
         "type": "tabs",
         "children": [
           {
-            "id": "7929eb8db13ae0ee",
+            "id": "b54bf827047c6909",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
+                "file": "Mechanics/Masters.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shaman's Ring and Spirit Ring"
+              "title": "Masters"
             }
           },
           {
-            "id": "c1a8422f3705bf2e",
+            "id": "09857b77870b388e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Player).md",
+                "file": "Mechanics/Inventory/Inventory Checker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combatant Data (Player)"
+              "title": "Inventory Checker"
             }
           },
           {
-            "id": "8c6055e727e70d8e",
+            "id": "8b943c497f86ecae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Enemy).md",
+                "file": "Mechanics/Inventory/Inventory Taker.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combatant Data (Enemy)"
+              "title": "Inventory Taker"
             }
           },
           {
-            "id": "f32a743a35238372",
+            "id": "449afd4c25a488b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
+                "file": "Mechanics/Inventory/Inventory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shaman's Ring and Spirit Ring"
+              "title": "Inventory"
             }
           },
           {
-            "id": "998da6133008e449",
+            "id": "fffb712a49ea9723",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Ordering.md",
+                "file": "Mechanics/Battle/Random Encounters.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ordering"
+              "title": "Random Encounters"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -213,13 +212,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Enemy).md",
+                "file": "Mechanics/Masters.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Combatant Data (Enemy)"
+              "title": "Outline of Masters"
             }
           },
           {
@@ -251,23 +250,29 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8c6055e727e70d8e",
+  "active": "8f5f02abd970e208",
   "lastOpenFiles": [
-    "Untitled.md",
-    "Mechanics/Battle/Combatant Data (Enemy).md",
-    "Mechanics/Battle/Formations.md",
-    "Mechanics/Permanent Stat Change Functions.md",
-    "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
-    "Mechanics/Battle/Combatant Data (Player).md",
-    "Mechanics/Field Party Data.md",
+    "Mechanics/Inventory/Inventory Checker.md",
+    "Mechanics/Inventory/Inventory.md",
+    "Mechanics/Masters.md",
+    "Mechanics/Inventory/Inventory Taker.md",
+    "Mechanics/Inventory/Inventory Giver.md",
+    "Mechanics/Battle/Random Encounters.md",
     "Mechanics/Ordering.md",
+    "Mechanics/Inventory",
+    "Mechanics/Battle/Formations.md",
+    "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
+    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Mechanics/Battle/Combatant Data (Player).md",
+    "Untitled.md",
+    "Mechanics/Permanent Stat Change Functions.md",
+    "Mechanics/Field Party Data.md",
     "Equipment/Accessories/Elemental Rings.md",
     "Untitled 1.base",
     "Untitled.base",
     "Technical/File Table.md",
     "Equipment/Accessories/General Table.md",
     "Equipment/Accessories/Spirit Ring.md",
-    "Mechanics/Inventory.md",
     "Spells/Buffs and Debuffs/Shield.md",
     "Spells/Buffs and Debuffs/Chill.md",
     "Mechanics/Battle/Target.md",
@@ -276,18 +281,12 @@
     "Mechanics/Battle/Formulae/Breath Formula.md",
     "Mechanics/Battle/Formulae/Melee Formula.md",
     "Mechanics/Battle/Formulae/Magic Formula.md",
-    "Mechanics/Navigation/Walking.md",
-    "Spells/Multipliers.md",
-    "Mechanics/Navigation/Coordinates.md",
-    "Mechanics/Battle/Random Encounters.md",
-    "Mechanics/Navigation/Conventions.md",
     "Technical/Audio/BGM",
     "Technical/Audio",
     "Mechanics/Area",
     "Spells/Manipulation",
     "Technical/Controls",
     "Mechanics/Events",
-    "LICENSE.txt",
-    "Mechanics/Fishing"
+    "LICENSE.txt"
   ]
 }
