@@ -8,7 +8,7 @@ There are 11 possible combatant slot (3 player + 8 max enemies). An index of `ff
 ## Queue Ordering
 To determine the order of the combatants during a turn, the game assigns priorities to each combatant. Combatants with larger priority values will be assigned to the front of the queue. For the player's party member, this weight is calculated as so:
 $$
-w = p + SPD
+w = p + AGL
 $$
 $$
 p = \left\lfloor \frac{Ma}{100} \right\rfloor

@@ -90,12 +90,12 @@ BIN/BOSS/BOSS055.EMI: 000a22dc
 ## Defense
 | 1st      | 2nd      | 3rd      |
 | -------- | -------- | -------- |
-| SPD -25% | SPD -25% | SPD -25% |
-Decreases speed by 25%:
+| AGL -25% | AGL -25% | AGL -25% |
+Decreases agility by 25%:
 ```
-800aab5c lhu    $a1, 0x5f48(at) ; load current DEF
+800aab5c lhu    $a1, 0x5f48(at) ; load current AGL
 800aab60 addiu  $a0, 0x0044
-800aab64 srl    $a1, 0x02 ; divide DEF by 4
+800aab64 srl    $a1, 0x02 ; divide AGL by 4
 800aab68 jal    0x801654f4
 800aab6c subu   $a1, $r0, $a1 ; make the change negative
 ```
@@ -206,16 +206,16 @@ BIN/BOSS/BOSS055.EMI: 00052a0c
 
 | 1st           | 2nd       | 3rd       |
 | ------------- | --------- | --------- |
-| SPD unchanged | SPD = 1st | SPD = 1st |
+| AGL unchanged | AGL = 1st | AGL = 1st |
 | DEF -50%      | DEF -50%  | DEF -50%  |
 Chain sets the speed of everyone in the party equal to the first member while cutting everyone's defense in half.
 ```
 800aabe4 lhu    $a1, 0x5f46(at) ; load current DEF
-800aabe8 lhu    $v1, 0x0000(s2) ; load first party member's SPD
+800aabe8 lhu    $v1, 0x0000(s2) ; load first party member's AGL
 800aabec srl    $a1, 0x01 ; divide DEF by 2
 800aabf0 lui    $at, 0x8014
 800aabf4 addu   $at, $v0
-800aabf8 sh     $v1, 0x5f48(at) ; store the first party member's SPD as own speed
+800aabf8 sh     $v1, 0x5f48(at) ; store the first party member's AGL as own speed
 800aabfc jal    0x801654f4
 800aac00 subu   $a1, $r0, $a1 ; make the DEF chnage negative
 ```
@@ -392,53 +392,3 @@ BIN/BOSS/BOSS052.EMI: 00046a38
 BIN/BOSS/BOSS054.EMI: 00049238
 BIN/BOSS/BOSS055.EMI: 0004c238
 ```
-## Stat Change Code 
-The code that changes the stats consists of two parts: the context and the stat changer. The stat changer is the same for all of these:
-
-```
-801654f4 lhu    $v1, 0x0000(a0) ; load the stat
-801654f8 sll    $v0, $a1, 0x10
-801654fc sra    $v0, 0x10
-80165500 blez   $v0, 0x80165534
-80165504 li     $a2, 0x03e7
-
-; if the stat change is negative
-80165534 bgez   $v0, 0x80165564
-80165538 nop    
-8016553c beqz   $v1, 0x80165564 
-
-; if the current stat is not zero
-80165540 addu   $v0, $v1, $a1 ; add the stat change to the stat
-80165544 sh     $v0, 0x0000(a0) ; store the new atat
-80165548 sll    $v0, 0x10
-8016554c bgez   $v0, 0x80165564
-80165550 subu   $v0, $r0, $v1
-80165564 move   $v0, $r0
-80165568 jr     $ra
-8016556c nop    
-```
-This code can be found at `SLUS_004.22: 000cf4f4`.
-Stats that cap at 100 use this formula instead:
-```
-80165694 lbu    $a2, 0x0000(a0) ; load the stat
-80165698 li     $v0, 0x0064
-8016569c andi   $v1, $a2, 0x00ff
-801656a0 bne    $v1, $v0, 0x801656b0
-801656a4 addu   $v0, $a2, $a1 ; add the stat and the stat change
-
-; if the stat is not 100
-801656b0 sb     $v0, 0x0000(a0) ; store the new stat
-801656b4 sll    $v0, 0x18
-801656b8 bgez   $v0, 0x801656c4
-801656bc nop    
-801656c4 lbu    $v0, 0x0000(a0) ; load the changed stat
-801656c8 nop    
-801656cc sltiu  $v0, 0x0065
-801656d0 bnez   $v0, 0x801656e4
-801656d4 li     $v0, 0x0001
-
-; if tje changed stat is less than or equal to 100
-801656e4 jr     $ra
-801656e8 nop    
-```
-This code can be found at `SLUS_004.22: 000cf694`.

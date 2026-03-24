@@ -2,7 +2,7 @@
 The location of unlocked genes can be found at:
 * `0x80145548` in the RAM
 * `+e70` in the save file
-When using Accession, the selected genes are stored at `0x801463c4` in the RAM. Each gene is one byte. The number of genes used is stored at `0x801463c7` in the RAM. The amount of initial AP the Accession spell uses is stord at `0x801463b8`. Let $T$ be the initial AP cost for using Accession. At the end of every turn, except for the turn in which Ryu uses Accession, $(T+1)/2$ AP is deducted from Ryu's current AP. If Ryu does not have enough AP, then he reverts back to his normal form.
+When using Accession, the selected genes are stored at `0x801463c4` in the RAM. Each gene is one byte. The number of genes used is stored at `0x801463c7` in the RAM. The amount of initial AP the Accession spell uses is stored at `0x801463b8`. Let $T$ be the initial AP cost for using Accession. At the end of every turn, except for the turn in which Ryu uses Accession, $(T+1)/2$ AP is deducted from Ryu's current AP. If Ryu does not have enough AP, then he reverts back to his normal form.
 
 | ID     | Gene     | Affinity                                                   | AP cost |
 | ------ | -------- | ---------------------------------------------------------- | ------- |

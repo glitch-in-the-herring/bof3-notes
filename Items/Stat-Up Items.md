@@ -38,7 +38,7 @@ Power food increases the target's PWR stat by 1 permanently:
 ```
 801e8544 addiu  $a0, $s0, 0x0020 ; set the stat to PWR
 801e8548 li     $a1, 0x0001 ; load PWR increase
-801e854c jal    0x801654f4 ; go to stat increase function
+801e854c jal    0x801654f4 ; go to stat change function
 ```
 The code can be found at:
 ```
@@ -53,7 +53,7 @@ Protein increases the target's DEF stat by 1 permanently:
 ```
 801e85e0 addiu  $a0, $s0, 0x0022 ; set the stat to DEF
 801e85e4 li     $a1, 0x0001 ; load DEF increase
-801e85e8 jal    0x801654f4 ; go to stat increase function
+801e85e8 jal    0x801654f4 ; go to stat change function
 ```
 The code can be found at:
 ```
@@ -64,11 +64,11 @@ BIN/ETC/STATUS.EMI: 000181e0
 | ID           | Flags | Price |
 | ------------ | ----- | ----- |
 | `0x1d`<br>29 |       |       |
-Swallow Eye increases the target's SPD by 1 permanently:
+Swallow Eye increases the target's AGL by 1 permanently:
 ```
-801e867c addiu  $a0, $s0, 0x0024 ; set the stat to SPD
-801e8680 li     $a1, 0x0001 ; load SPD increase
-801e8684 jal    0x801654f4 ; go to stat increase function
+801e867c addiu  $a0, $s0, 0x0024 ; set the stat to AGL
+801e8680 li     $a1, 0x0001 ; load AGL increase
+801e8684 jal    0x801654f4 ; go to stat change function
 ```
 
 The code can be found at:
@@ -84,7 +84,7 @@ Fish-Head increases the target's INT by 1 permanently:
 ```
 801e8718 addiu  $a0, $s0, 0x0026 ; set the stat to INT
 801e871c li     $a1, 0x0001 ; load INT increase
-801e8720 jal    0x801654f4 ; go to stat increase function
+801e8720 jal    0x801654f4 ; go to stat change function
 ```
 
 The code can be found at:
