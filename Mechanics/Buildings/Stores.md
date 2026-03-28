@@ -9,3 +9,27 @@ The store data is only loaded when the player hits the "Buy" button in the store
 * `0x801ca28c` in the RAM
 * `BIN/ETC/GAME.EMI: 0003528c` in the game's files
 The address of the store entry is then stored in `0x8018e7cc`.
+Discounts are calculated using this formula:
+```
+801daa04 lhu    $v0, -0x768c(at) ; load the item's original buying price
+801daa08 j      0x801daa70
+801daa0c nop    
+801daa70 jr     $ra
+801daa74 nop    
+801e2fb0 lbu    $a1, 0x000b(s2) ; load the new price percentage
+801e2fb4 jal    0x801d3654
+801e2fb8 andi   $a0, $v0, 0xffff
+801d3654 andi   $a1, 0xffff
+801d3658 mult   $a0, $a1 ; multiply by the percentage
+801d365c mflo   $v1, $lo
+801d3660 lui    $v0, 0x51eb
+801d3664 ori    $v0, 0x851f
+801d3668 multu  $v1, $v0
+801d366c mfhi   $a2, $hi
+801d3670 srl    $v0, $a2, 0x05 ; multiply by the percentage
+801d3674 bnez   $v0, 0x801d3680
+801d3678 nop    
+801d3680 jr     $ra
+801d3684 nop    
+```
+This code can be found at `BIN/ETC/SHOP.EMI: 0000a604`.

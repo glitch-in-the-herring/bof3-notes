@@ -16,7 +16,7 @@ Where:
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------- |
 | 1             | KaiserBreath                                                                                                                                      | `0x41`     |               |
 | 2             | DoomBreath<br>Aura Breath<br>Magma Breath<br>Gaea'sBreath<br>Hurricane                                                                            | `0x42`     |               |
-| 2             | DragonBreath                                                                                                                                      | `0x7c`     | $d'=d-DEF_D$  |
+| 2             | DragonBreath<br>MeteorStrike (both)                                                                                                               | `0x7c`     | $d'=d-DEF_D$  |
 | 3             | Firebreath<br>Icebreath<br>Flame Breath<br>Frost Breath<br>ThundrBreath<br>DivineBreath<br>[[Noting#Noting 6\|Noting 6]]<br>Geo Breath<br>Tempest | `0x40`     |               |
 | 3             | Whelp Breath                                                                                                                                      | `0x06`     | $d'=d-DEF_D$  |
 

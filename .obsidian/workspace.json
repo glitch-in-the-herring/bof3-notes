@@ -4,53 +4,66 @@
     "type": "split",
     "children": [
       {
-        "id": "ee7151b251dae0e7",
+        "id": "2d0e000596e78a70",
         "type": "tabs",
         "children": [
           {
-            "id": "9220baa41f4a6b10",
+            "id": "5e580ca829138993",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Equipment/Accessories/Lion's Belt.md",
+                "file": "Mechanics/Buildings/Stores.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lion's Belt"
+              "title": "Stores"
             }
           },
           {
-            "id": "faef81242da235a9",
+            "id": "f612a487c79f9b9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Equipment/Accessories/Accessory Call.md",
+                "file": "Equipment/Vital/Flyer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Accessory Call"
+              "title": "Flyer"
             }
           },
           {
-            "id": "31d05f1876579ddf",
+            "id": "2903238304763091",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Equipment/Accessories/Wisdom Ring.md",
+                "file": "Mechanics/Inventory/Inventory.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wisdom Ring"
+              "title": "Inventory"
+            }
+          },
+          {
+            "id": "794cca3d0fd56092",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Equipment/Accessories/High Boots.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "High Boots"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "WIS",
+                "query": "WIS80166140",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -223,14 +236,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "faef81242da235a9",
+  "active": "5e580ca829138993",
   "lastOpenFiles": [
-    "Equipment/Accessories/Lion's Belt.md",
-    "Equipment/Accessories/Wisdom Ring.md",
-    "Equipment/Accessories/Speed Boots.md",
+    "Mechanics/Inventory/Inventory.md",
+    "Equipment/Accessories/Coupons.md",
+    "Equipment/Vital/Flyer.md",
+    "Mechanics/Buildings/Stores.md",
     "Equipment/Accessories/High Boots.md",
+    "Mechanics/Inventory/Inventory Checker.md",
+    "Equipment/Weapons/General Table.md",
+    "Equipment/Vital",
+    "Equipment/Accessories/General Table.md",
+    "Equipment/Accessories/Wisdom Ring.md",
+    "Mechanics/Battle/Formulae/Breath Formula.md",
     "Equipment/Accessories/Titan Belt.md",
+    "Equipment/Accessories/Speed Boots.md",
     "Equipment/Accessories/Accessory Call.md",
+    "Equipment/Accessories/Lion's Belt.md",
     "Mechanics/Battle/Turns.md",
     "Items/Stat-Up Items.md",
     "Mechanics/Battle/Formations.md",
@@ -243,14 +265,6 @@
     "Spells/General Success Rate Formula.md",
     "Mechanics/Status.md",
     "Mechanics/Battle/Formulae/Magic Formula.md",
-    "Equipment/Accessories/General Table.md",
-    "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
-    "Mechanics/Masters.md",
-    "Mechanics/Inventory/Inventory.md",
-    "Mechanics/Inventory/Inventory Taker.md",
-    "Mechanics/Inventory/Inventory Checker.md",
-    "Mechanics/Inventory/Inventory Giver.md",
-    "Mechanics/Battle/Dragons/Genes.md",
     "Mechanics/Inventory",
     "Untitled 1.base",
     "Untitled.base",
@@ -259,7 +273,6 @@
     "Mechanics/Area",
     "Spells/Manipulation",
     "Technical/Controls",
-    "Mechanics/Events",
-    "LICENSE.txt"
+    "Mechanics/Events"
   ]
 }
