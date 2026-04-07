@@ -3,8 +3,8 @@ For the player's party, these are located at:
 * HP: `+0x11c` from the battle data start
 * AP: `+0x11e` from the battle data start
 For the enemy's party, these are located at:
-* HP:
-* AP: 
+* HP: `+0xf8` from the battle data start
+* AP:  `+0xfa` from the battle data start
 ## Change Text
 The text that shows when HP/AP is changed depends on the heal status. 
 
