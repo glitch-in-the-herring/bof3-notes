@@ -27,26 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Enemy).md",
+                "file": "Technical/Memory Card/Checksum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combatant Data (Enemy)"
-            }
-          },
-          {
-            "id": "d43b030af8ab9e6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Equipment/Weapons/Beast Spear.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Beast Spear"
+              "title": "Checksum"
             }
           },
           {
@@ -78,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "poison",
+                "query": "8011504f",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -251,35 +237,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a599844c2acc79cb",
+  "active": "f1f450b5d3046627",
   "lastOpenFiles": [
+    "README.md",
+    "Technical/Memory Card/Checksum.md",
+    "Mechanics/Status.md",
+    "Technical/Memory Card",
     "Mechanics/Battle/Combatant Data (Player).md",
-    "Equipment/Weapons/Beast Spear.md",
-    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Mechanics/Battle/Dragons/Accession/Accession.md",
+    "Mechanics/Battle/Dragons/Fusion.md",
+    "Mechanics/Battle/Dragons/Accession/Abilities.md",
+    "Mechanics/Battle/Dragons/Accession/Transformation.md",
+    "Mechanics/Inventory/Inventory.md",
     "Mechanics/Battle/HP-AP Change.md",
+    "Mechanics/Field Party Data.md",
+    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Spells/Informative/Foretell.md",
+    "Mechanics/Fishing/Fish.md",
+    "Mechanics/Battle/Formulae/Breath Formula.md",
+    "Mechanics/Battle/Target.md",
+    "Mechanics/Battle/Formulae/Magic Formula.md",
+    "Mechanics/Faerie Village/Jobs/Hunting and Food.md",
+    "Mechanics/Battle/Resistance.md",
+    "Mechanics/Battle/Turns.md",
+    "Mechanics/Battle/Action.md",
+    "Equipment/Weapons/Beast Spear.md",
+    "Mechanics/Battle/Dragons/Genes.md",
     "Equipment/Vital/Flyer.md",
     "Mechanics/Buildings/Stores.md",
-    "Mechanics/Inventory/Inventory.md",
     "Equipment/Accessories/Coupons.md",
-    "Equipment/Accessories/High Boots.md",
-    "Mechanics/Inventory/Inventory Checker.md",
-    "Equipment/Weapons/General Table.md",
     "Equipment/Vital",
-    "Equipment/Accessories/General Table.md",
-    "Equipment/Accessories/Wisdom Ring.md",
-    "Mechanics/Battle/Formulae/Breath Formula.md",
-    "Equipment/Accessories/Titan Belt.md",
-    "Equipment/Accessories/Speed Boots.md",
-    "Equipment/Accessories/Accessory Call.md",
-    "Equipment/Accessories/Lion's Belt.md",
-    "Mechanics/Battle/Turns.md",
-    "Items/Stat-Up Items.md",
-    "Mechanics/Battle/Formations.md",
-    "Mechanics/Stat Change Function.md",
-    "Equipment/Accessories/Elemental Rings.md",
-    "Spells/Spell Call.md",
-    "Mechanics/Field Party Data.md",
-    "Equipment/Resistance to 7.md",
     "Mechanics/Inventory",
     "Untitled 1.base",
     "Untitled.base",
@@ -287,7 +274,6 @@
     "Technical/Audio",
     "Mechanics/Area",
     "Spells/Manipulation",
-    "Technical/Controls",
-    "Mechanics/Events"
+    "Technical/Controls"
   ]
 }
