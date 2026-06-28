@@ -2,7 +2,7 @@ The available targeting options are:
 
 | Byte   | Targeting                                  | Field | First Target | Example                         | Notes                                                                                       |
 | ------ | ------------------------------------------ | ----- | ------------ | ------------------------------- | ------------------------------------------------------------------------------------------- |
-| `0x02` | Self                                       | False | Player part  | Accession                       | The only spells that use this targeting option are Main Cannon, Accession, and Restore Form |
+| `0x02` | Self                                       | False | Player party | Accession                       | The only spells that use this targeting option are Main Cannon, Accession, and Restore Form |
 | `0x0e` | Self                                       | False | Player party | Focus                           |                                                                                             |
 | `0x1e` | All<br>Always player party                 | False | Player party | War Shout                       |                                                                                             |
 | `0x1f` | All<br>Always player party                 | True  | Player party | [[Noting#Noting 11\|Noting 11]] | Noting 11 is the only spell that uses this targeting option                                 |

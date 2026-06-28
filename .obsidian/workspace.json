@@ -4,67 +4,52 @@
     "type": "split",
     "children": [
       {
-        "id": "2d0e000596e78a70",
+        "id": "a7c45a8605483596",
         "type": "tabs",
         "children": [
           {
-            "id": "f612a487c79f9b9d",
+            "id": "6f7f5f8c8aa70627",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/HP-AP Change.md",
+                "file": "Spells/Buffs and Debuffs/Douse.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HP-AP Change"
+              "title": "Douse"
             }
           },
           {
-            "id": "f1f450b5d3046627",
+            "id": "0b025ffdeeef0dcd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technical/Memory Card/Checksum.md",
+                "file": "Spells/Buffs and Debuffs/Gloom.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Checksum"
+              "title": "Gloom"
             }
           },
           {
-            "id": "2903238304763091",
+            "id": "bf2532936855f86a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Inventory/Inventory.md",
+                "file": "Spells/Targeting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Inventory"
-            }
-          },
-          {
-            "id": "794cca3d0fd56092",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Equipment/Accessories/High Boots.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "High Boots"
+              "title": "Targeting"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "8011504f",
+                "query": "noting",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "bfed6f3f7d11ac19",
@@ -223,7 +208,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 233.5
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,35 +222,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f1f450b5d3046627",
+  "active": "8f5f02abd970e208",
   "lastOpenFiles": [
-    "README.md",
-    "Technical/Memory Card/Checksum.md",
-    "Mechanics/Status.md",
-    "Technical/Memory Card",
-    "Mechanics/Battle/Combatant Data (Player).md",
-    "Mechanics/Battle/Dragons/Accession/Accession.md",
-    "Mechanics/Battle/Dragons/Fusion.md",
-    "Mechanics/Battle/Dragons/Accession/Abilities.md",
-    "Mechanics/Battle/Dragons/Accession/Transformation.md",
-    "Mechanics/Inventory/Inventory.md",
-    "Mechanics/Battle/HP-AP Change.md",
-    "Mechanics/Field Party Data.md",
+    "Spells/Buffs and Debuffs/Gloom.md",
+    "Spells/Buffs and Debuffs/Douse.md",
+    "Spells/Targeting.md",
+    "Spells/Buffs and Debuffs/Celerity.md",
+    "Spells/Drainers/Depress.md",
+    "Equipment/Armor/General Table.md",
     "Mechanics/Battle/Combatant Data (Enemy).md",
-    "Spells/Informative/Foretell.md",
-    "Mechanics/Fishing/Fish.md",
-    "Mechanics/Battle/Formulae/Breath Formula.md",
+    "Mechanics/Battle/Combatant Data (Player).md",
+    "Spells/Noting.md",
+    "Spells/General Table.md",
     "Mechanics/Battle/Target.md",
+    "Mechanics/Battle/Formations.md",
+    "Mechanics/Battle/Dragons/Accession/Accession.md",
     "Mechanics/Battle/Formulae/Magic Formula.md",
-    "Mechanics/Faerie Village/Jobs/Hunting and Food.md",
-    "Mechanics/Battle/Resistance.md",
-    "Mechanics/Battle/Turns.md",
-    "Mechanics/Battle/Action.md",
+    "Items/Item Call.md",
+    "Equipment/Weapons/General Table.md",
     "Equipment/Weapons/Beast Spear.md",
-    "Mechanics/Battle/Dragons/Genes.md",
+    "Mechanics/Area/Item Call.md",
+    "Equipment/Accessories/Accessory Call.md",
+    "Equipment/Accessories/General Table.md",
     "Equipment/Vital/Flyer.md",
-    "Mechanics/Buildings/Stores.md",
-    "Equipment/Accessories/Coupons.md",
+    "Spells/Informative/Foretell.md",
+    "Spells/Healing Spells/Transfer.md",
+    "Spells/Healing Spells/Snooze.md",
+    "Spells/Healing Spells/Rest.md",
+    "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
+    "Technical/Memory Card",
     "Equipment/Vital",
     "Mechanics/Inventory",
     "Untitled 1.base",

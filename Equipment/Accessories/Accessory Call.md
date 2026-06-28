@@ -16,3 +16,4 @@ Accessory calls are functions that are called by accessories when they are equip
 ```
 This code can be found at `SLUS_004.22: 000cfb98`
 The table for accessory calls can be found at `SLUS_004.22: 000b3ec8`.
+## Calls
