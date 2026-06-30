@@ -3,18 +3,19 @@ There are two party orderings:
 * Battle ordering
 In both cases, the IDs used are the same:
 
-| ID     | Character    |
-| ------ | ------------ |
-| `0x00` | Ryu (young)  |
-| `0x01` | Nina (young) |
-| `0x02` | Garr         |
-| `0x03` | Teepo        |
-| `0x04` | Rei          |
-| `0x05` | Momo         |
-| `0x06` | Peco         |
-| `0x07` | Ryu (adult)  |
-| `0x08` | Nina (adult) |
-| `0xff` | Blank        |
+| ID     | Character     |
+| ------ | ------------- |
+| `0x00` | Ryu (young)   |
+| `0x01` | Nina (young)  |
+| `0x02` | Garr          |
+| `0x03` | Teepo         |
+| `0x04` | Rei           |
+| `0x05` | Momo          |
+| `0x06` | Peco          |
+| `0x07` | Ryu (adult)   |
+| `0x08` | Nina (adult)  |
+| `0x09` | Ryu (pajamas) |
+| `0xff` | Blank         |
 Unlike Breath of Fire IV, the game does not load a new area for battles, which means that the orderings are not reloaded until you enter or exit an area.
 ## Field Ordering
 The field ordering is located at:

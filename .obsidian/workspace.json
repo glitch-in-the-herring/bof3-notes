@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spells/Buffs and Debuffs/Gloom.md",
+                "file": "Mechanics/Ordering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gloom"
+              "title": "Ordering"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "Targeting"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "noting",
+                "query": "order",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +103,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -222,16 +224,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f5f02abd970e208",
+  "active": "0b025ffdeeef0dcd",
   "lastOpenFiles": [
+    "Mechanics/Battle/Combatant Data (Player).md",
+    "Mechanics/Battle/Combatant Counter.md",
+    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Mechanics/Faerie Village/Jobs/Exploration.md",
+    "Mechanics/Faerie Village/Jobs/Copy Shop.md",
+    "Mechanics/Faerie Village/Jobs/Faerie Job Data.md",
+    "Mechanics/Faerie Village/Faerie Stats.md",
+    "Mechanics/Faerie Village/Spawning.md",
     "Spells/Buffs and Debuffs/Gloom.md",
     "Spells/Buffs and Debuffs/Douse.md",
     "Spells/Targeting.md",
     "Spells/Buffs and Debuffs/Celerity.md",
     "Spells/Drainers/Depress.md",
     "Equipment/Armor/General Table.md",
-    "Mechanics/Battle/Combatant Data (Enemy).md",
-    "Mechanics/Battle/Combatant Data (Player).md",
     "Spells/Noting.md",
     "Spells/General Table.md",
     "Mechanics/Battle/Target.md",
@@ -244,12 +252,6 @@
     "Mechanics/Area/Item Call.md",
     "Equipment/Accessories/Accessory Call.md",
     "Equipment/Accessories/General Table.md",
-    "Equipment/Vital/Flyer.md",
-    "Spells/Informative/Foretell.md",
-    "Spells/Healing Spells/Transfer.md",
-    "Spells/Healing Spells/Snooze.md",
-    "Spells/Healing Spells/Rest.md",
-    "Equipment/Accessories/Shaman's Ring and Spirit Ring.md",
     "Technical/Memory Card",
     "Equipment/Vital",
     "Mechanics/Inventory",
