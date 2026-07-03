@@ -18,14 +18,7 @@ Celerity adds its spell power value to all of the caster's [[Stat Multiplier|sta
 801ef3e4 j      0x801ef404
 801ef3e8 sb     $v0, 0x0014(a0) ; cap to -100
 ```
-Once used, it starts the countdown timer at `0x80145554`, which is formatted as such:
-
-| Position | Value                                              |
-| -------- | -------------------------------------------------- |
-| 0        | Hour                                               |
-| 1        | Minute                                             |
-| 2        | Second                                             |
-| 3        | Subsecond (by default this is 1/30ths of a second) |
+Once used, it starts the countdown timer at `0x80145554`, which uses the [[Clock]] data structure.
 By default, it waits for five hours:
 ```
 801ef2bc li     $a0, 0x0005 ; load hour

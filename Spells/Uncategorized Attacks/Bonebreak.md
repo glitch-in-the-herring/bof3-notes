@@ -1,14 +1,7 @@
 | Spell ID     | Targeting                              | Power | AP  | Element | Battle Spell Call |
 | ------------ | -------------------------------------- | ----- | --- | ------- | ----------------- |
 | `0x15`<br>21 | `0x6a`<br>Single<br>Always enemy party | 0     | 0   |         | `0x00`            |
-Bonebreak uses the [[Melee Formula]] but with the target's defense ignored. Once used, it starts the countdown timer at `0x80145558`, which is formatted as such:
-
-| Position | Value                                              |
-| -------- | -------------------------------------------------- |
-| 0        | Hour                                               |
-| 1        | Minute                                             |
-| 2        | Second                                             |
-| 3        | Subsecond (by default this is 1/30ths of a second) |
+Bonebreak uses the [[Melee Formula]] but with the target's defense ignored. Once used, it starts the countdown timer at `0x80145558`, which uses the [[Clock]] data structure.
 By default, it waits for five hours:
 ```
 8009f73c li     $v0, 0x0005 ; load hour
