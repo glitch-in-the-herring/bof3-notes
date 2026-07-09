@@ -1,12 +1,13 @@
 The copy shop allows the player to copy certain items, though it has a chance of failing. It can either fail normally (the faerie gives back your item) or spectacularly (whatever item you copied becomes a useless rice ball).
-When you give an item to the copy shop, the item's quantity in the inventory is reduced by one. The item is also removed from the inventory item ID table if necessary. In the shop's data section, the game inserts the item's ID to the item ID slot and sets the copy status to `0x10`, indicating the item is not ready. 
+When you give an item to the copy shop, the item's quantity in the inventory is reduced by one. The item is also removed from the inventory item ID table if necessary. In the shop's data section, the game inserts the item's ID to the item ID slot and sets the copy status to `0x1_`, indicating the item is not ready. The second digit of the status byte is the [[Inventory#Inventory Type|Inventory Type]] of the item.
 The item's ID is stored in the first free byte of the [[Faerie Job Data]], while the status is stored in the second free byte. The status bytes are:
 
-| Status | Description                                                   |
-| ------ | ------------------------------------------------------------- |
-| `0x20` | Success<br>Two of the copied item is returned                 |
-| `0x30` | Normal Failure<br>Item is returned                            |
-| `0x40` | Spectacular Failure<br>Sets your copied item to the rice ball |
+| Status | Description                                                       |
+| ------ | ----------------------------------------------------------------- |
+| `0x1_` | Not ready<br>Not enough battles have elapsed since the last visit |
+| `0x2_` | Success<br>Two of the copied item is returned                     |
+| `0x3_` | Normal Failure<br>Item is returned                                |
+| `0x4_` | Spectacular Failure<br>Sets your copied item to the rice ball     |
 The game checks for the item's price when copying, and has a table of price categories with relevant values for calculating the success rate and number of battles required for the copy shop to update. This can be found at:
 * `0x801f2530` in the RAM
 * In the following files:

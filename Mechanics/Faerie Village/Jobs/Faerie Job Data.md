@@ -1,5 +1,7 @@
-Each job data is attached to a single faerie, not the room that the faerie is in. The data can be found at:
+Each job data is attached to a single faerie, not the room that the faerie is in. The job data also determines whether or not a specific faerie is alive.
+The data can be found at:
 * `0x801455c8` in the RAM
+* `+0xef0` in the save file
 Each entry is 8 bytes long and is structured as such:
 
 | Position | Description                                                   | Values                                                                                                                | Notes |
