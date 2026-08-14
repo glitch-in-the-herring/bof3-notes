@@ -55,11 +55,12 @@ BIN/WORLD04/AREA185.EMI: 000c6004
 Each is an eight-bit unsigned integer matching the order of the trip types.
 The status byte is assigned to the first free slot. There are three status bytes:
 
-| Byte   | Status  |
-| ------ | ------- |
-| `0x00` | Waiting |
-| `0x02` | Success |
-| `0x03` | Failure |
+| Byte   | Status    |
+| ------ | --------- |
+| `0x00` | Idle      |
+| `0x01` | Exploring |
+| `0x02` | Success   |
+| `0x03` | Failure   |
 
 ## Reward
 If the faerie successfully completes an exploration, the game will determine the reward when talking to the faerie. rolls $\mathrm{random}(0,100)$. It then checks the random number using the following tables, based on the trip type:

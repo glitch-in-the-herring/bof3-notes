@@ -1,7 +1,10 @@
 To survive, the faerie village needs to have food. Food is obtained by sending faeries out to hunt.
 The amount of food currently available in the village is located at:
 * `0x801455c2` in the RAM
-* `+0xeeb` in the save file
+* `+0xeea` in the save file
+The battle counter used for the hunting job is located at:
+* `0x801455b4` in the RAM
+* `+0xedc` in the save file
 The number of food that is in the faerie village with a living population of $N$ and a hunting team of size $N_h\leq N$ after you have fought $m$ battles is given by:
 $$
 F = F_0 + \left\lfloor\frac{m}{5}\right\rfloor\Delta F
