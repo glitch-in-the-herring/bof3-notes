@@ -4,6 +4,7 @@ The enemy party's combatant data starts at `0x801eb630` in the RAM and is 320 by
 | -------- | --------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | 5        | Combatant ID          | 8-bit unsigned integer       |                                                                                                                  |
 | 116-119  | Name                  | ASCII null-terminated string |                                                                                                                  |
+| 130-131  | Status                | See [[Status]]               |                                                                                                                  |
 | 148-149  | Current HP            | 16-bit signed integer        |                                                                                                                  |
 | 150-151  | Current AP            | 16-bit signed integer        |                                                                                                                  |
 | 152      | Steal item ID         | 8-bit unsigned integer       |                                                                                                                  |
