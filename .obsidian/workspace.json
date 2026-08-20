@@ -4,39 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9baa9b6c19c20d4d",
+        "id": "6430119d34e1aae8",
         "type": "tabs",
         "children": [
           {
-            "id": "31f1658460bcedb5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spells/Elemental Strikes/Frost Strike.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Frost Strike"
-            }
-          },
-          {
-            "id": "74e7e6ea46480c12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Spells/Elemental Strikes/ThundrStrike.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ThundrStrike"
-            }
-          },
-          {
-            "id": "b1e9a1000fde25d6",
+            "id": "4dfdfe13739dcab8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -50,45 +22,45 @@
             }
           },
           {
-            "id": "ca3b87d491980521",
+            "id": "dd2d9b6e1ac459d7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanics/Battle/Combatant Data (Player).md",
+                "file": "Mechanics/Status.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Combatant Data (Player)"
+              "title": "Status"
             }
           },
           {
-            "id": "9ff6d3a2ddd238dc",
+            "id": "ad6fe7a1ea415603",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spells/Targeting.md",
+                "file": "Mechanics/Battle/Formulae/Melee Formula.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Targeting"
+              "title": "Melee Formula"
             }
           },
           {
-            "id": "f249c83a1f389865",
+            "id": "c67c7508f748f086",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Spells/Healing Spells/Rest.md",
+                "file": "Mechanics/Battle/Accuracy.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rest"
+              "title": "Accuracy"
             }
           }
         ],
@@ -126,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sleep",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -267,35 +239,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "74e7e6ea46480c12",
+  "active": "dd2d9b6e1ac459d7",
   "lastOpenFiles": [
+    "Mechanics/Battle/Accuracy.md",
+    "Mechanics/Status.md",
+    "Mechanics/Battle/Formulae/Melee Formula.md",
     "Mechanics/Battle/Combatant Data (Player).md",
     "Mechanics/Battle/Combatant Data (Enemy).md",
-    "Spells/Elemental Strikes/ThundrStrike.md",
-    "Spells/Elemental Strikes/Frost Strike.md",
-    "Spells/Targeting.md",
-    "Spells/General Success Rate Formula.md",
-    "Mechanics/Battle/Elements.md",
-    "Spells/Healing Spells/Rest.md",
-    "Mechanics/Status.md",
+    "Spells/Spell Category.md",
     "Mechanics/Battle/Formulae/Magic Formula.md",
-    "Spells/Elemental Strikes",
+    "Mechanics/Battle/Formulae/Breath Formula.md",
+    "Spells/Uncategorized Attacks/Tsunami.md",
+    "Spells/Uncategorized Attacks/Bonebreak.md",
+    "Spells/Uncategorized Attacks/Holocaust.md",
     "Spells/General Table.md",
+    "Mechanics/Battle/Formations.md",
+    "Mechanics/Battle/Elements.md",
+    "Spells/Noting.md",
+    "Mechanics/Battle/Learning.md",
+    "Mechanics/Battle/HP-AP Change.md",
+    "Spells/Healing Spells/Rest.md",
+    "Spells/Targeting.md",
+    "Spells/Elemental Strikes/Frost Strike.md",
+    "Spells/Elemental Strikes/ThundrStrike.md",
+    "Spells/General Success Rate Formula.md",
+    "Spells/Elemental Strikes",
     "Technical/Audio/BGM.md",
     "Mechanics/Fishing/Fish.md",
     "Mechanics/Fishing/Lure.md",
     "Mechanics/Fishing/Equipment.md",
-    "Mechanics/Fishing/Catching.md",
-    "Technical/Controls/R1.md",
-    "Technical/Rendering/Rendering Map.md",
-    "Technical/Rendering/Height Map (Boundary).md",
-    "Technical/Rendering/Header.md",
-    "Technical/Rendering/Camera.md",
-    "Mechanics/Inventory/Inventory.md",
-    "Mechanics/Area/Interactables.md",
-    "Mechanics/Furniture.md",
-    "Mechanics/Battle/Random Encounters.md",
-    "Mechanics/Field Party Data.md",
     "Technical/Memory Card",
     "Equipment/Vital",
     "Mechanics/Inventory",
