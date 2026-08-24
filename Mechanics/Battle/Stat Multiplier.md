@@ -1,5 +1,7 @@
 Like in Breath of Fire IV, the game keeps track of the current amount of buffs/debuffs applied to the character by using the stat multiplier. 
 Except... for some reason this game multiplies the value of the stat multiplier by two before applying them.
+## Storing
+
 ## Limit
 Normally the limit for buffs is 50 while the limit for debuffs is -25. Multiply by 2 to get the actual amount that you'd expect to see in-game. [[Celerity]] uses a different limit.
 ```

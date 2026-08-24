@@ -31,7 +31,22 @@ Each master has six spell entries. Each spell entry is two bytes in length and c
 | -------- | --------------- |
 | 1        | Level threshold |
 | 2        | Spell ID        |
-
+## Skill Granting
+After the new stored, the skill flag is then activated:
+```
+801d3dac lbu    $a1, 0x4089(at) ; load spell ID 
+801d3db0 li     $v0, 0x0001
+801d3db4 srl    $a0, $a1, 0x05 
+801d3db8 sll    $a0, 0x02
+801d3dbc addu   $a0, $s4 ; get byte position
+801d3dc0 andi   $a1, 0x001f
+801d3dc4 lw     $v1, 0x0000(a0) ; load old flag
+801d3dc8 sllv   $v0, $a1 ; get bit position
+801d3dcc or     $v1, $v0 ; activate bit
+801d3dd0 j      0x801d3de8
+801d3dd4 sw     $v1, 0x0000(a0) ; store new flag
+```
+The code can be found at `BIN/ETC/SISYOU.EMI: 000039ac`.
 ## Bonuses
 The stat bonuses are located at:
 * `0x801d4154` in the RAM
@@ -72,6 +87,22 @@ D'lonzo requires you to carry 15 different weapons.
 ...
 801f38e8 sltiu  $v0, 0x000f ; check if weapon counter is greater than or equal to 15
 ```
+### Hondara
+Hondara requires you to learn Backhand from Durandal. He will check that flag when you talk to him:
+```
+801f2c18 lui    $v0, 0x8014 ; load base address for flag
+801f2c1c lw     $v0, 0x4f94(v0) ; load flag
+801f2c20 nop    
+801f2c24 andi   $v0, 0x0020 ; check for Backhand
+801f2c28 beqz   $v0, 0x801f2c40
+
+; if flag bit is active
+801f2c2c li     $v0, 0x0092
+
+; if flag bit is inactive
+801f2c40 li     $v0, 0x0093
+```
+This code can be found at `BIN/WORLD01/AREA074.EMI: 000ca018`.
 ### Meryleep
 Meryleep requires you to have the Faerie Tiara to talk to her and the Flower Jewel to be able to apprentice under her. The Faerie Tiara check is done when the rock starts to hover above the pond.
 ```

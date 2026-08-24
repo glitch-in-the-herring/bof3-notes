@@ -1,13 +1,13 @@
 A party member or a combatant can be afflicted with a status effect.
 
-| Bit    | Status     | Effects                                            |
-| ------ | ---------- | -------------------------------------------------- |
-| `0x04` | Paralyzed? | Skips the character's turn                         |
-| `0x08` | Blind      | Has a 50% chance of not calculating the attack     |
-| `0x10` | Mute       | Cannot use certain abilities                       |
-| `0x20` | Confused   | Cannot be controlled by the player                 |
-| `0x40` | Sleeping   | Skips the character's turn, will eventually revert |
-| `0x80` | Poisoned   | Drains (current HP + 5)/4 HP every turn            |
+| Bit    | Status     | Effects                                                                                     |
+| ------ | ---------- | ------------------------------------------------------------------------------------------- |
+| `0x04` | Paralyzed? | Skips the character's turn                                                                  |
+| `0x08` | Blind      | Has a 50% chance of not calculating the attack                                              |
+| `0x10` | Mute       | Cannot use certain abilities                                                                |
+| `0x20` | Confused   | Cannot be controlled by the player                                                          |
+| `0x40` | Sleeping   | Skips the character's turn, will eventually revert                                          |
+| `0x80` | Poisoned   | Drains (current HP + 5)/4 HP every turn on a battle, Lose 1 HP every ten steps on the field |
 ## Blind
 If the attacker is blind, roll a random number and check if that number `& 2` is zero. If it is, then calculate the attack. Otherwise, the attack misses. The normal [[accuracy]] check happens if the attack is calculated.
 ```
