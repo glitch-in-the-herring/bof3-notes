@@ -20,7 +20,7 @@ $$
 If $\Delta AGL$ is negative, use this instead:
 $$
 \alpha = \left\lfloor\frac{\Delta AGL + 15}{16}\right\rfloor
-$$If $\alpha$ is greater than 6, then let $\beta$ be 56. If $\alpha$ is less than 0, then let $\beta$ bet 28.
+$$If $\alpha$ is greater than 6, then let $\beta$ be 56. If $\alpha$ is less than 0, then let $\beta$ be 28.
 $$
 \beta = \begin{cases}
 56 & \alpha\geq6\\
