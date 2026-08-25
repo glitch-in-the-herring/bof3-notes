@@ -110,6 +110,6 @@ Then compare it with $\epsilon$ to determine the outcome of the escape:
 $$
 \begin{cases}
 \mathrm{success} & r < \epsilon\\
-\mathrm{fail} & r >= \epsilon
+\mathrm{fail} & r \geq \epsilon
 \end{cases}
 $$
