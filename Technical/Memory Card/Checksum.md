@@ -14,7 +14,7 @@ The game calculates the checksum by summing up the bytes in the save file starti
 	801e5b20 lbu    $v0, 0x0000(v1) ; load current byte
 	801e5b24 addiu  $v1, 0x0001 ; move pointer to the next byte
 	801e5b28 addu   $a2, $v0 ; add current byte to the running sum
-	801e5b2c andi   $v0, $a0, 0xffff 
+	801e5b2c andi   $v0, $a0, 0xffff ; clip the byte to the 16-bit limit
 	801e5b30 sltiu  $v0, 0x10b0 ; loop 0x10b0 times
 	801e5b34 bnez   $v0, 0x801e5b14
 	801e5b38 addiu  $a1, 0x0001 ; increment copy location pointer

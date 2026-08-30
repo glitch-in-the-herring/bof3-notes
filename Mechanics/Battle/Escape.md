@@ -1,4 +1,4 @@
-If the player successfully escapes, then the current battle is cancelled and no rewards are received. Enemies will always escape successfully. Any enemy that escapes cannot have their rewards be collected.
+If the player successfully escapes, then the current battle is cancelled and no rewards are received. Enemies will always escape successfully. Any enemy that escapes cannot have their rewards be collected. Escape will fail if the current battle is inescapable.
 
 First, the game checks if the current escape attempt is the third or greater, in which case the escape will always succeed.
 Otherwise, the game first calculates two values to determine the escape outcome, the player party AGL average and the truncated enemy party AGL average:
