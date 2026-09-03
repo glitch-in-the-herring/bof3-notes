@@ -39,6 +39,7 @@ The game selects a button for the player to press and then starts the countdown 
 | 14   | 5       | 0.167 seconds                         |
 | 15   | 4       | 0.13 seconds                          |
 | 16+  | 3       | 0.1 seconds                           |
+This table can be found at `BIN/BMAGIC/MAGIC003.EMI: 00014684`.
 Once the button is pressed, the timer is reset to six counts before rolling for the next button. 
 ```
 801eeed0 jal    0x8017e3d4 ; call random number function
