@@ -32,7 +32,7 @@ Each master has six spell entries. Each spell entry is two bytes in length and c
 | 1        | Level threshold |
 | 2        | Spell ID        |
 ## Skill Granting
-After the new stored, the skill flag is then activated:
+After the new skill is stored, the skill flag is then activated:
 ```
 801d3dac lbu    $a1, 0x4089(at) ; load spell ID 
 801d3db0 li     $v0, 0x0001

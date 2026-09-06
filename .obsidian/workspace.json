@@ -13,6 +13,34 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Mechanics/Battle/Combatant Data (Enemy).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Combatant Data (Enemy)"
+            }
+          },
+          {
+            "id": "a225f71b9bbb8695",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Spells/Melee/Double and Triple Blow.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Double and Triple Blow"
+            }
+          },
+          {
+            "id": "19fe7642befff05c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Spells/Melee/Super Combo.md",
                 "mode": "source",
                 "source": false
@@ -20,8 +48,23 @@
               "icon": "lucide-file",
               "title": "Super Combo"
             }
+          },
+          {
+            "id": "115e55d6ddaa939a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Mechanics/Ordering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ordering"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -196,14 +239,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f5f02abd970e208",
+  "active": "a225f71b9bbb8695",
   "lastOpenFiles": [
-    "Mechanics/Battle/Combatant Data (Player).md",
-    "Spells/Targeting.md",
     "Spells/Melee/Super Combo.md",
+    "Mechanics/Masters.md",
+    "Spells/Melee/Double and Triple Blow.md",
+    "Mechanics/Battle/Combatant Data (Player).md",
+    "Mechanics/Battle/Combatant Data (Enemy).md",
+    "Mechanics/Ordering.md",
+    "Spells/Targeting.md",
     "Mechanics/Inventory/Inventory Checker.md",
     "Mechanics/Battle/Formulae/Melee Formula.md",
-    "Mechanics/Battle/Combatant Data (Enemy).md",
     "Spells/Uncategorized Attacks/Bonebreak.md",
     "Spells/Melee",
     "Technical/Audio/BGM.md",
@@ -222,9 +268,6 @@
     "Mechanics/Buildings/Inns.md",
     "Mechanics/Battle/Turns.md",
     "Mechanics/Battle/Learning.md",
-    "Mechanics/Battle/Battle Files.md",
-    "Mechanics/Battle/Beyd.md",
-    "Mechanics/Battle/Escape.md",
     "Spells/Elemental Strikes",
     "Technical/Memory Card",
     "Equipment/Vital",
